@@ -1,0 +1,64 @@
+{
+  "Changes": [
+    {
+      "LogName": "Marriage sprites",
+      "Action": "EditImage",
+      "Target": "Characters/Robin",
+      "FromFile": "assets/character/Robin_Married.png",
+      "When": {
+        "Relationship:Robin |contains=Married": "true",
+        "Season": "Spring, Summer, Fall"
+        //"DayEvent: |contains=flower dance, wedding": "false" //this works for flower dance
+      }
+    },
+    {
+      "LogName": "Marriage sprites winter",
+      "Action": "EditImage",
+      "Target": "Characters/Robin",
+      "FromFile": "assets/character/Robin_Married_Winter.png",
+      "When": {
+        "Relationship:Robin |contains=Married": "true",
+        "DayEvent: |contains=wedding": "false",
+        "Season": "Winter"
+      }
+    },
+    {
+      "LogName": "Exercise sprites", //Tested OK
+      "Action": "EditImage",
+      "Target": "Characters/Robin",
+      "FromFile": "assets/character/Robin.png",
+      "When": {
+        "Relationship:Robin |contains=Married": "true",
+        "DayOfWeek": "Tuesday",
+        "Time": "{{Range: 1300, 1600}}",
+        "Season": "spring, summer, fall"
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Exercise sprites winter", //Tested OK
+      "Action": "EditImage",
+      "Target": "Characters/Robin",
+      "FromFile": "assets/character/Robin_Winter.png",
+      "When": {
+        "Relationship:Robin |contains=Married": "true",
+        "DayOfWeek": "Tuesday",
+        "Time": "{{Range: 1300, 1600}}",
+        "Season": "Winter"
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Wedding day sprites",
+      "Action": "EditImage",
+      "Target": "Characters/Robin",
+      "FromFile": "assets/character/Robin_Wedding_Day.png",
+      "When": {
+        //"Relationship:Robin |contains=Married, Engaged": "true",
+        "DayEvent": "wedding",
+        "LocationName": "Town" //does this fix: the When field is invalid: 'Location' can't be used as a token because that token could not be found.
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    }
+  ]
+}

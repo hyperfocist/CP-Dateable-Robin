@@ -1,0 +1,89 @@
+{
+  "Changes": [
+    {
+      "LogName": "Update Demetrius & Robin when engaged, married",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Robin":{
+          "FriendsAndFamily": {
+            "Demetrius": "{{i18n:ex-husband}}"
+          }
+        },
+        "Demetrius":{
+          "FriendsAndFamily": {
+            "Robin": "{{i18n:ex-wife}}"
+          }
+        }
+      },
+      "When": {
+        "Relationship:Robin |contains=Married, Engaged": "true"
+      }
+    },
+    {
+      "LogName": "Breathing animation",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "robin_sleep": "50/50/50" // note: make name lowercase
+      }
+    },
+    {
+      "LogName": "Update & disposition & spawn location when dateable",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Robin": {
+          "CanBeRomanced": true,
+          "Gender": "Female",
+          "LoveInterest": "",
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "ScienceHouse",
+              "Tile": {
+                "X": 3,
+                "Y": 4
+              },
+              "Direction": "right"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag": "RobinDateable"
+      }
+    },
+    {
+      "LogName": "Insert spouse room & patio",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Robin": {
+          "SpouseRoom": {
+            "MapAsset": "Hyperfocist_DateableRobin_SpouseRoom",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "SpousePatio": {
+            "MapAsset": "Hyperfocist_DateableRobin_OutsideArea",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            }
+          }
+        }
+      },
+      "When": {
+        "Relationship:Robin |contains=Married": "true"
+      }
+    }
+  ]
+}

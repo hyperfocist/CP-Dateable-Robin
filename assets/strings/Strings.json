@@ -1,0 +1,25 @@
+{
+  "Changes": [
+    {
+      "LogName": "Character strings",
+      "Action": "EditData",
+      "Target": "Strings/Characters",
+      "Entries": {
+        "MovieInvite_Spouse_Robin": "Hey, movie tickets! Fantastic, I'd love to go with you!#$b#I'll meet you at the theater.",
+        "Relative_ExHusband": "ex-husband",
+        "Relative_ExWife": "ex-wife"
+      }
+    },
+    {
+      "LogName": "Married strings",
+      "Action": "EditData",
+      "Target": "Strings/1_6_Strings",
+      "Entries": {
+        "DesertFestival_Robin": "Hey, Hon. We're just chewing the fat over here. I don't see these guys very often!"
+      },
+      "When": {
+        "Relationship:Robin |contains=Married": "true"
+      }
+    }
+  ]
+}

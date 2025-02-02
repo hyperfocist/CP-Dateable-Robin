@@ -1,0 +1,193 @@
+{
+  "Changes": [
+    /*{
+      "LogName": "Add Robin to flower dance",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Value": "Robin 14 34 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Robin 13 24 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "Robin 4 36 up",
+          "Delimiter": "/"
+        },
+        *//*{
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Robin 16 30 up",
+          "Delimiter": "/"
+        }*//*
+      ]
+    },*/
+    {
+      "LogName": "Add Robin & Demetrius to luau",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Value": "Robin 20 10 right",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Value": "Demetrius 21 10 left",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Robin 34 6 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Demetrius 33 6 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "Robin 38 16 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "Demetrius 39 16 left",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Robin 21 18 up",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Demetrius 22 18 up",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Update Robin & Demetrius luau text",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Robin": "Have you spoken with Maru and Sebby today?",
+        "Demetrius": "I just spoke with Sebby & Maru, they both seem to be enjoying themselves.",
+        "Robin_y2": "Did you spend any time with Sebby and Maru today?",
+        "Demetrius_y2": "I'm hoping that Sebby, Maru and I can eat together after the ceremony."
+      },
+      "When": {
+        "Relationship:Robin |contains=Dating, Engaged, Married, Divorced": "true"
+      }
+    },
+    {
+      "LogName": "Stop Robin & Demetrius dancing at luau",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": ["Entries", "set-up"],
+          "Search": "animate Robin false true 500 20 21 20 22",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": ["Entries", "set-up"],
+          "Search": "animate Demetrius false true 500 24 25 24 26",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": ["Entries", "set-up_y2"],
+          "Search": "animate Robin false true 500 20 21 20 22",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": ["Entries", "set-up_y2"],
+          "Search": "animate Demetrius false true 500 24 25 24 26",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "Relationship:Robin |contains=Dating, Engaged, Married, Divorced": "true"
+      }
+    },
+    {
+      "LogName": "Add Robin & Demetrius to egg hunt",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Value": "Robin 36 59 right",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Value": "Demetrius 35 59 left",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Robin 36 59 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Demetrius 23 61 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "Robin 33 72 left",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "Demetrius 19 63 right",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Robin 35 69 left",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Demetrius 31 64 down",
+          "Delimiter": "/"
+        }
+      ]
+    }
+  ]
+}

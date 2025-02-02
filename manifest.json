@@ -1,0 +1,17 @@
+{
+  "Name": "Dateable Robin",
+  "Author": "Hyperfocist",
+  "Version": "0.0.1",
+  "Description": "A mod that lets you date (and marry) Robin.",
+  "UniqueID": "Hyperfocist.DateableRobin",
+  "UpdateKeys": [], // when you release the mod, see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "ApryllForever.CPPolyamorySweet", //will this fix the 'boyfriend' & sprite issues
+      "IsRequired": false
+    }
+  ]
+}

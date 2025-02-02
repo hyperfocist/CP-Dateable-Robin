@@ -1,0 +1,16 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load spouse room",
+      "Action": "Load",
+      "Target": "Maps/Hyperfocist_DateableRobin_SpouseRoom",
+      "FromFile": "assets/maps/spouseRoom.tmx"
+    },
+    {
+      "LogName": "Load outside area",
+      "Action": "Load",
+      "Target": "Maps/Hyperfocist_DateableRobin_OutsideArea",
+      "FromFile": "assets/maps/spousePatios.tmx"
+    }
+  ]
+}

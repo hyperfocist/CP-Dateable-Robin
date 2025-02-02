@@ -1,0 +1,46 @@
+{
+  "Changes": [
+    {
+      "LogName": "Robin's 7-heart event - will Robin be dateable?",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "77770001/f Robin 1750/t 0600 2400": "continue/64 15/farmer 64 16 2 Robin 64 18 0/skippable/pause 1500/speak Robin \"Oh, hey, @. I'm glad I caught you.#$b#I need some advice, and since we're good friends now, I wanted to ask your opinion.\"/pause 500/faceDirection Robin 3/emote Robin 28/pause 1800/faceDirection Robin 0/speak Robin \"It's no secret that Demetrius and I haven't been getting along too well for a while now.#$b#We had a long talk last night and I'm not sure how committed he is to working on our marriage.$2\"/pause 1000/speak Robin \"He made it clear that his work is very important to him.$6\"/pause 500/emote Robin 28/pause 500/speak Robin \"What do you think I should do, @?\" /pause 200/question fork0 \"How should we answer?#Explore your options. You can create a great life on your own or with someone else here.#Stick with Demetrius and keep your comfy life together. Why risk being all by yourself?\" /fork SingleRobin/pause 500/message \"*sigh* You're probably right. Thanks for listening and being such a good friend.\"/pause 1000/end",
+        "SingleRobin": "pause 200/addMailReceived RobinDateable/speak Robin \"You know, I think that's what I've already been feeling in my heart. I just needed to hear someone else say it.#$b#My kids are here and I have great friends here.#$b#I can make a wonderful life here! Thanks for the advice, @. I'm feeling really positive about what the future holds!\"/pause 500/end"
+      }
+    },
+    {
+      "LogName": "Robin's 8-heart event - declaring love",
+      "Action": "EditData",
+      "Target": "Data/Events/Backwoods",
+      "Entries": {
+        "77770002/f Robin 2000/t 0600 2400": "sweet/25 15/farmer 19 17 1 Robin 25 14 3/skippable/pause 1500/speak Robin \"Hi @, I was just coming to see you!$1#$b#Do you have a moment? I want to tell you something.\"/move farmer 0 -2 0 Robin 0 1 2/move farmer 2 0 1 Robin -3 0 3/pause 1000/speak Robin \"You know, after everything with Demetrius... I didn't expect to feel anything again, at least not this soon.\"/emote farmer 8/pause 1000/speak Robin \"I've realized something over the past little while.#$b#You've been an amazing friend to me.#$b#You're super supportive, a great listener and you've provided such thoughtful advice.#$b#We've spent a lot of time together and I... well, I've started to feel something deeper.$2\"/emote farmer 32/pause 1000/speak Robin \"@... I think I'm in love with you.$7\"/emote farmer 16/pause 1000/speak Robin \"But no pressure, OK?\"/pause 1000/speak Robin \"I just wanted to tell you that whatever the future holds, @. I hope you'll always be in my life.\"/emote farmer 20/pause 1000/speak Robin \"So, with that said, um, would you like to head back to your place... and, you know, spend some quality time together?$7\"/pause 1000/emote Robin 20 true/emote farmer 20/pause 1000/globalFade .007/viewport -1000 -1000/end"
+      },
+      "When": {
+        "HasFlag": "RobinDateable"
+      }
+    },
+    {
+      "LogName": "Robin's 10-heart event - Demetrius is OK",
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "Entries": {
+        "77770003/f Robin 2000/t 0600 2400": "continue/42 13/farmer 42 14 0 Demetrius 42 13 2/skippable/pause 1500/speak Demetrius \"Hi, @. Can we talk for a minute?$2\" /faceDirection Demetrius 1 true/pause 1000/speak Demetrius \"I know this might be a bit awkward, but I just wanted to say that I'm completely cool with you and Robin being together.$2\"/pause 1000/faceDirection Demetrius 2 true/speak Demetrius \"Our relationship struggled for quite a while.#$b#It was really hard on her.$2\"/pause 1000/speak Demetrius \"She's a remarkable person, and I'm glad she's found someone who makes her feel loved.$0\"/faceDirection Demetrius 1 true/pause 2000/speak Demetrius \"I'm actually happy for both of you.#$b#It had to be pretty lonely for you when you moved here.#$b#I'm glad you found someone, too.$0\"/faceDirection Demetrius 2 true/pause 1000/speak Demetrius \"Thanks for hearing me out, @. I appreciate it and I hope this wasn't too awkward.$0\"/pause 1000/speak Demetrius \"Hey, let's all grab a coffee sometime.$0#$b#Unless you're afraid I'll try to steal your girl back.$1\"/pause 1000/globalFade .003/viewport -1000 -1000/end"
+      },
+      "When": {
+        "Relationship:Robin |contains=Dating, Engaged, Married": "true"
+      }
+    },
+    {
+      "LogName": "Robin's 14-heart event - low prices",
+      "Action": "EditData",
+      "Target": "Data/Events/ScienceHouse",
+      "Entries": {
+        "77770004/f Robin 3500/t 1030 1500": "sweet/5 20/farmer 6 24 0 Robin 5 18 2/addMailReceived LowerPrices/skippable/pause 1500/speak Robin \"Hi, @! I'm so glad you came by.$1\"/move farmer 0 -3 0/move farmer -2 0 0/move farmer 0 -3 1/faceDirection Robin 3/emote Robin 20/pause 1000/speak Robin \"I just realized something!\"/speak Robin \"Now that we're a couple, it doesn't make sense for me to charge you for my recipies.\"/speak Robin \"The money just comes back into our household.\"/speak Robin \"Except that Lewis will keep some of it as taxes.$3\"/speak Robin \"From now on stop in any time I'm here and I'll give you any recipe you want.$0\"/speak Robin \"I can't believe we didn't think of this sooner!$1\"/emote Robin 20 true/emote farmer 20/pause 1000/end"
+      },
+      "When": {
+        "Relationship:Robin |contains=Married": "true"
+      }
+    }
+  ]
+}
