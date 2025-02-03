@@ -36,7 +36,7 @@
       "Action": "EditData",
       "Target": "Data/Events/ScienceHouse",
       "Entries": {
-        "77770004/f Robin 3500/t 1030 1500": "sweet/5 20/farmer 6 24 0 Robin 5 18 2/addMailReceived LowerPrices/skippable/pause 1500/speak Robin \"Hi, @! I'm so glad you came by.$1\"/move farmer 0 -3 0/move farmer -2 0 0/move farmer 0 -3 1/faceDirection Robin 3/emote Robin 20/pause 1000/speak Robin \"I just realized something!\"/speak Robin \"Now that we're a couple, it doesn't make sense for me to charge you for my recipies.\"/speak Robin \"The money just comes back into our household.\"/speak Robin \"Except that Lewis will keep some of it as taxes.$3\"/speak Robin \"From now on stop in any time I'm here and I'll give you any recipe you want.$0\"/speak Robin \"I can't believe we didn't think of this sooner!$1\"/emote Robin 20 true/emote farmer 20/pause 1000/end"
+        "77770004/f Robin 3500/t 1030 1500": "sweet/5 20/farmer 6 24 0 Robin 5 18 2/addMailReceived LowerPrices/skippable/pause 1500/speak Robin \"Hi, @! I'm so glad you came by.$1\"/move farmer 0 -3 0/move farmer -2 0 0/move farmer 0 -3 1/faceDirection Robin 3/emote Robin 20/pause 1000/speak Robin \"I just realized something!\"/speak Robin \"Now that we're a couple, it doesn't make sense for me to charge you for my recipies.\"/speak Robin \"The money just comes back into our household.\"/speak Robin \"Except that Lewis will keep some of it as taxes.$3\"/speak Robin \"From now on stop in any time I'm here and I'll give you any recipe you want.$0\"/speak Robin \"I can't believe we didn't think of this sooner!$1\"/emote Robin 20 true/emote farmer 20/pause 1000/addMailReceived Robin14Hearts/end"
       },
       "When": {
         "Relationship:Robin |contains=Married": "true"
