@@ -10,7 +10,7 @@
   },
   "Dependencies": [
     {
-      "UniqueID": "ApryllForever.CPPolyamorySweet", //will this fix the 'boyfriend' & sprite issues
+      "UniqueID": "ApryllForever.CPPolyamorySweet",
       "IsRequired": false
     }
   ]

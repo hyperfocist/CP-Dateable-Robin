@@ -19,7 +19,10 @@
     {
       "LogName": "Update shops",
       "Action": "Include",
-      "FromFile": "assets/data/Shops.json"
+      "FromFile": "assets/data/Shops.json",
+      "When": {
+        "HasFlag": "Robin14Hearts"
+      }
     },
     {
       "LogName": "Update maps",
