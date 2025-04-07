@@ -1,0 +1,46 @@
+{
+  "Changes": [
+    {
+      "LogName": "Update flower dance",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Value": "Robin 14 34 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Robin 13 24 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "Robin 4 36 up",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Robin 16 30 up",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Flower dance sprites", //Tested OK
+      "Action": "EditImage",
+      "Target": "Characters/Robin",
+      "FromFile": "assets/character/Robin_FlowerDance.png",
+      /*"When": {
+        "RobinIsAvailable": true,
+        "DayEvent": "flower dance" //this works
+      },*/
+      "Update": "OnLocationChange, OnTimeChange"
+    }
+  ]
+}

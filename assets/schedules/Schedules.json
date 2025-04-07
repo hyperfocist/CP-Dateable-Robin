@@ -14,7 +14,19 @@
       }
     },
     {
-      "LogName": "Dating, engaged schedules (Robin moves in with Maru)",
+      "LogName": "Demetrius schedule - no more dancing after 4 hearts",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Demetrius",
+      "Entries":
+      {
+        "Fri": "GOTO rain"
+      },
+      "When": {
+        "query: {{Hearts:Robin}} >= 4": true
+      }
+    },
+    {
+      "LogName": "Dating, engaged, divorced schedule (Robin moves in with Maru)",
       "Action": "EditData",
       "Target": "Characters/schedules/Robin",
       "Entries":
@@ -31,7 +43,7 @@
         "spring_23": "800 ScienceHouse 8 18 2/1700 Saloon 2 18 0/1930 ScienceHouse 16 5 0/2100 ScienceHouse 3 4 1 robin_sleep"
       },
       "When": {
-        "Relationship:Robin |contains=Dating, Engaged": "true"
+        "Relationship:Robin |contains=Dating, Engaged, Divorced": "true"
       }
     },
     {
@@ -40,7 +52,6 @@
       "Target": "Characters/schedules/Robin",
       "Entries":
       {
-        "rain": "700 ScienceHouse 8 18 2/2100 bed robin_sleep", //doesn't work, Robin stays home
         "GreenRain": "2200 robin_sleep",//summer days (5, 6, 7, 14, 15, 16, 18, 23)
         "DesertFestival_2": "900 Desert 18 8 0 \"Strings\\1_6_Strings:DesertFestival_Robin\"/2410 bed robin_sleep",
         "marriage_Mon": "700 ScienceHouse 8 18 2/1500 bed robin_sleep", //trip to work takes 2:30
@@ -57,7 +68,7 @@
       }
     },
     /*{
-      "LogName": "Green rain married schedule", //doesn't work
+      "LogName": "Green rain married schedule", //doesn't work, loads but Robin just goes to front door and stays there
       "Action": "EditData",
       "Target": "Characters/schedules/Robin",
       "Entries":
@@ -65,21 +76,8 @@
         "GreenRain": "0610 bed" //summer days (5, 6, 7, 14, 15, 16, 18, 23)
       },
       "When": {
-        //"Relationship:Robin |contains=Married": "true"
-        "Spouse": "Robin"
+        "Relationship:Robin |contains=Married": "true"
       }
-    },*/
-    {
-      "LogName": "Demetrius schedules - no more dancing",
-      "Action": "EditData",
-      "Target": "Characters/schedules/Demetrius",
-      "Entries":
-      {
-        "Fri": "750 ScienceHouse 22 20 1 demetrius_notes/1600 ScienceHouse 20 4 1 demetrius_sleep"
-      },
-      "When": {
-        "query: {{Hearts:Robin}} >= 4": true
-      }
-    }
+    }*/
   ]
 }

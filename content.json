@@ -1,5 +1,15 @@
 {
-  "Format": "2.3.0",
+  "Format": "2.5.0",
+  "DynamicTokens": [
+    {
+      "Name": "RobinIsAvailable",
+      "Value": true,
+      "When": {
+        "Relationship:Robin |contains=Divorced": "false",
+        "HasFlag": "RobinDateable"
+      }
+    }
+  ],
   "Changes": [
     {
       "LogName": "Update characters",
@@ -87,16 +97,5 @@
         "Relationship:Robin |contains=Married": "true"
       }
     },*/
-    /*{
-      "LogName": "Flower dance sprites", //Tested OK
-      "Action": "EditImage",
-      "Target": "Characters/Robin",
-      "FromFile": "assets/character/Robin_FlowerDance.png",
-      "When": {
-        "Relationship:Robin |contains=Married, Engaged": "true",
-        "DayEvent": "flower dance" //this works
-      },
-      "Update": "OnLocationChange, OnTimeChange"
-    }*/
   ]
 }

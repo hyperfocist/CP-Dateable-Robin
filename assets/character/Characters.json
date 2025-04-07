@@ -1,23 +1,31 @@
 {
   "Changes": [
     {
-      "LogName": "Update Demetrius & Robin when engaged, married",
+      "LogName": "Update Robin when engaged, married",
       "Action": "EditData",
       "Target": "Data/Characters",
+      "TargetField": ["Robin"],
       "Entries": {
-        "Robin":{
-          "FriendsAndFamily": {
-            "Demetrius": "{{i18n:ex-husband}}"
-          }
-        },
-        "Demetrius":{
-          "FriendsAndFamily": {
-            "Robin": "{{i18n:ex-wife}}"
-          }
+        "FriendsAndFamily": {
+          "Demetrius": "{{i18n:ex-husband}}"
         }
       },
       "When": {
-        "Relationship:Robin |contains=Married, Engaged": "true"
+        "HasFlag": "RobinDateable"
+      }
+    },
+    {
+      "LogName": "Update Demetrius when engaged, married",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Demetrius"],
+      "Entries": {
+        "FriendsAndFamily": {
+          "Robin": "{{i18n:ex-wife}}"
+        }
+      },
+      "When": {
+        "HasFlag": "RobinDateable"
       }
     },
     {
@@ -32,24 +40,23 @@
       "LogName": "Update & disposition & spawn location when dateable",
       "Action": "EditData",
       "Target": "Data/Characters",
+      "TargetField": ["Robin"],
       "Entries": {
-        "Robin": {
-          "CanBeRomanced": true,
-          "Gender": "Female",
-          "LoveInterest": "",
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "ScienceHouse",
-              "Tile": {
-                "X": 3,
-                "Y": 4
-              },
-              "Direction": "right"
-            }
-          ]
-        }
+        "CanBeRomanced": true,
+        "Gender": "Female",
+        "LoveInterest": "",
+        "Home": [
+          {
+            "Id": "Default",
+            "Condition": null,
+            "Location": "ScienceHouse",
+            "Tile": { //sharing a bed with Maru now
+              "X": 3,
+              "Y": 4
+            },
+            "Direction": "right"
+          }
+        ]
       },
       "When": {
         "HasFlag": "RobinDateable"
@@ -59,25 +66,24 @@
       "LogName": "Insert spouse room & patio",
       "Action": "EditData",
       "Target": "Data/Characters",
+      "TargetField": ["Robin"],
       "Entries": {
-        "Robin": {
-          "SpouseRoom": {
-            "MapAsset": "Hyperfocist_DateableRobin_SpouseRoom",
-            "MapSourceRect": {
-              "X": 0,
-              "Y": 0,
-              "Width": 6,
-              "Height": 9
-            }
-          },
-          "SpousePatio": {
-            "MapAsset": "Hyperfocist_DateableRobin_OutsideArea",
-            "MapSourceRect": {
-              "X": 0,
-              "Y": 0,
-              "Width": 4,
-              "Height": 4
-            }
+        "SpouseRoom": {
+          "MapAsset": "Hyperfocist_DateableRobin_SpouseRoom",
+          "MapSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 6,
+            "Height": 9
+          }
+        },
+        "SpousePatio": {
+          "MapAsset": "Hyperfocist_DateableRobin_OutsideArea",
+          "MapSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 4,
+            "Height": 4
           }
         }
       },
