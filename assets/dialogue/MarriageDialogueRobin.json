@@ -99,7 +99,6 @@
         "funLeave_Robin": "{{Random: *sigh*... Did we get married too fast?$s, Are you still happy with me?$s,Is everything OK between us? You've been acting different lately.$s, Do you ever wonder what else is out there?$s, You used to be romantic... what happened?$s#$e#Maybe you should try to spend a little more time with me.$a, Is this the life you envisioned when you asked me to marry you?$s, Do you remember when you used to work on our relationship$s, You've been so distant lately...$s, I wonder if this was all a huge mistake.$s}}",        "funReturn_Robin": "Oh. You're home."
       },
       "When": {
-        //"query: {{Hearts:Robin}} >= 7": true
         "Hearts:Robin": "{{Range: 1, 7}}"
       }
     },
@@ -118,7 +117,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/MarriageDialogueRobin",
       "Entries": {
-        "funLeave_Robin": "{{Random: 'I thought I might miss the mountain, but I really love living in the valley.', 'I got flustered the first time we met.$l#$b# Sorry if I came off a little rude.$h', '@? I love you. Have a great day today.', 'Wow, you look great today!$l^You look beautiful today.$l', 'Mmm... You smell nice today.', 'I was just admiring my wedding amulet... I cherish it as much as I cherish you.$l', 'Take care of yourself out there! Sometimes I worry about you falling into a mine shaft.', '@? I just want to say that I appreciate all the hard work you do for our household.$h', 'I've got a lot to do today. Don't worry about me, go and have a great day.$l', 'I love our life here.$h'}}",
+        "funLeave_Robin": "{{Random: I thought I might miss the mountain but I really love living in the valley., I got flustered the first time we met.$l#$b# Sorry if I came off a little rude.$h, @? I love you. Have a great day today., You look great today!$l^You look beautiful today!$l, Mmm... You smell nice today., I was just admiring my wedding amulet... I cherish it as much as I cherish you.$l, Take care of yourself out there! Sometimes I worry about you falling into a mine shaft., @? I just want to say that I appreciate all the hard work you do for our household.$h, I've got a lot to do today so don't worry about me. Go and have a great day.$l, I love our life here.$h}}",
         "funReturn_Robin": "Hi Sweetie! I'm so glad you're home."
       },
       "When": {

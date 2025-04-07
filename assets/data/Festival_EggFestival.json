@@ -1,0 +1,83 @@
+{
+  "Changes": [
+    {
+      "LogName": "Update Egg Festival",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Robin 36 59 right",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Demetrius 35 59 left",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "Robin 36 59 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "Demetrius 23 61 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Robin 33 72 left",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Demetrius 19 63 right",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters_y2"
+          ],
+          "Value": "Robin 35 69 left",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters_y2"
+          ],
+          "Value": "Demetrius 31 64 down",
+          "Delimiter": "/"
+        }
+      ]
+    }
+  ]
+}

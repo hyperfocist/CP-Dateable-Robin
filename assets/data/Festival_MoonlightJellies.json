@@ -1,0 +1,47 @@
+{
+  "Changes": [
+    {
+      "LogName": "Update Moonlight Jellies",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Robin 74 25 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "Robin 74 25 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters_y2"
+          ],
+          "Value": "Robin 11 33 left",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters_y2"
+          ],
+          "Value": "Robin 11 33 left",
+          "Delimiter": "/"
+        }
+      ]
+    }
+  ]
+}

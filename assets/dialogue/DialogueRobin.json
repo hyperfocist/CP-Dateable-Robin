@@ -10,10 +10,10 @@
       }
     },
     {
+      "LogName": "Update Robin's core dialog",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
-        "RobinDateable": "Demetrius and I have decided to separate. We've filed for divorce with Mayor Lewis.#$b#I really appreciate your advice earlier. I'm at peace with our decision.",
         "AcceptBouquet": "You want to get serious?#$b#Me too!$1#$b#I'm so glad you feel the same way.$l",
         "Sun6": "{{i18n:Robin.Dialogue.Sun6}}",
         "dating_Robin": "Let me tell Demetrius and the kids that we're dating.#$b#They should hear it from me first.",
@@ -37,31 +37,34 @@
       }
     },
     {
+      "LogName": "Robin's friendly saloon dialog 4+ hearts",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
-        "Saloon_Fri": "{{Random: 'Demetrius used to come dancing with me on Friday nights.#$e#I wish he could break away from work.$2', 'I used to love Friday nights at the saloon with Demetrius.#$e#He doesn’t come dancing anymore.$2', 'Fridays aren’t the same without dancing with Demetrius.#$e#I wonder if he misses it like I do.$2'}}"
+        "Saloon_Fri": "{{Random: I guess Demetrius isn't coming dancing tonight.#$e#I wish he could break away from work.$2, I guess I'm alone again tonight.#$e#Demetrius doesn’t seem to come dancing anymore.$2, Demetrius is missing out on dancing again.#$e#Do you think he misses it?$2}}"
       },
       "When": {
-        "query: {{Hearts:Robin}} >= 4": true
+        "query: {{Hearts:Robin}} >= 4": true,
+        "Relationship:Robin": "Friendly"
       }
     },
     {
+      "LogName": "Robin's dateable dialog, she & Demetrius have divorced",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
         "Sat8": "Demetrius' job is more important to him than anything else. I’m glad I finally decided to move on.",
         "Thu8": "I tried talking to Demetrius about spending more time with the family, but he just didn't listen. His research always came first.",
-        "Mon8": "I've been sleeping in Maru's room lately. It's kind of her to make some space for me.#$e#She's really wonderful.",
-        "Fri8": "I've been sleeping in Maru's room lately. It's kind of her to make some space for me.#$e#She's really wonderful.",
-        "Wed8": "I'm looking forward to a bright future! I hope you'll always be a part of it.",
-        "Saloon_Fri": "{{Random: 'Demetrius used to come dancing with me on Friday nights.#$e#I wish he could break away from work.$2', 'I used to love Friday nights at the saloon with Demetrius.#$e#He doesn’t come dancing anymore.$2', 'Fridays aren’t the same without dancing with Demetrius.#$e#I wonder if he misses it like I do.$2'}}"
+        "Mon8": "Demetrius and I have decided to separate. We've filed for divorce with Mayor Lewis.#$b#I really appreciate your advice earlier. I'm at peace with our decision.",
+        "Fri8": "I've been sleeping in Maru's room now that Demetrius and I are divorced. It's kind of her to make some space for me.#$e#She's really wonderful.",
+        "Wed8": "I'm looking forward to a bright future! I hope you'll always be a part of it."
       },
       "When": {
-        "Relationship:Robin |contains=Dating, Engaged": "true"
+        "HasFlag": "RobinDateable"
       }
     },
     {
+      "LogName": "Robin's green rain dialog",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries":
