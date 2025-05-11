@@ -4,7 +4,7 @@
     //Desert Festival - Spring 15 - 17 - Robin & Demetrius attend Spring 16
     //*done Flower Dance - Spring 24
     //*done Luau - Summer 11
-    //Moonlight Jellies - Summer 28
+    //*done Moonlight Jellies - Summer 28
     //Stardew Valley Fair - Fall 16
     //Spirits Eve - Fall 27
     //Festival of Ice - Winter 8
@@ -39,6 +39,14 @@
       "When": {
         "HasFlag": "RobinDateable"
       }
-    }
+    },
+    /*{
+      "LogName": "Load Stardew Valley Fair JSON",
+      "Action": "Include",
+      "FromFile": "assets/data/Festival_StardewValleyFair.json",
+      "When": {
+        "HasFlag": "RobinDateable"
+      }
+    }*/
   ]
 }

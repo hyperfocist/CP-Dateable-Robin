@@ -60,6 +60,11 @@
       "FromFile": "assets/dialogue/DialogueMaru.json"
     },
     {
+      "LogName": "Sebastion dialog",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/DialogueSebastian.json"
+    },
+    {
       "LogName": "Update events",
       "Action": "Include",
       "FromFile": "assets/events/Events.json"

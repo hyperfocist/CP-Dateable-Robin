@@ -1,0 +1,30 @@
+{
+  "Changes": [
+    {
+      "LogName": "Update Festival of Ice",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Robin 36 59 right",
+          "Delimiter": "/"
+        }
+      ]
+    }
+  ]
+}
+
+TODO: Review this festival in Vanilla
+
+"set-up": "animate Robin false true 100 24 25 26 24 25 26 24 25 26 24 25 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27" //Demetrius wasnt included here
+"Robin": "I'm sorry, but carving ice parapets requires my undivided attention!",
+"Demetrius": "You know what? I probably should've worn a jacket.",
+
+"set-up_y2": "animate Robin false true 100 24 25 26 24 25 26 24 25 26 24 25 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27" //Demetrius wasnt included here
+"Robin_y2": "Ice sculpting is a rewarding challenge for me. It's a distinct material that I'm not used to!",
+"Demetrius_y2": "Water ice... a most profound substance, indeed. Necessary for life, it makes a fitting material for statuary meant to represent the living form.",
