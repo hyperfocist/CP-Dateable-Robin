@@ -29,8 +29,8 @@
         "Sun2": "Demetrius has been spending a lot of late nights at the lab. He's really dedicated to his work.",
         "Mon4": "Demetrius is working something big, but I sometimes miss just hanging out together.",
         "Thu4": "I miss having dinners with Demetrius. I'm feeling less connected to him.",
-        "Wed4": "I understand Demetrius' work is important, but there's a distance between us that I can't seem to bridge.",
-        "Sat6": "Demetrius' job is more important to him than anything else. I'm grateful that I have my own career.#$e#I really love carpentry.'",
+        "Wed4": "I understand Demetrius' work is important, but there's a distance growing between us that I can't seem to bridge.",
+        "Sat6": "Demetrius' job is more important to him than anything else. I'm grateful that I have my own career to keep me fulfilled.#$e#I really love carpentry.'",
         "Thu6": "Demetrius isn't spending much time with the family, but I think the kids and I are growing even closer.",
         "Mon6": "I have a lot of evening time to myself these days. I haven't had this much time to read since before Sebby was born.",
         "Wed6": "It's no secret I'm feeling lonely, but at least I have a stable life here.#$b#I'm luckier than many others."
@@ -53,11 +53,11 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
-        "Sat8": "Demetrius' job is more important to him than anything else. I’m glad I finally decided to move on.",
-        "Thu8": "I tried talking to Demetrius about spending more time with the family, but he just didn't listen. His research always came first.",
-        "Mon8": "Demetrius and I have decided to separate. We've filed for divorce with Mayor Lewis.#$b#I really appreciate your advice earlier. I'm at peace with our decision.",
-        "Fri8": "I've been sleeping in Maru's room now that Demetrius and I are divorced. It's kind of her to make some space for me.#$e#She's really wonderful.",
-        "Wed8": "I'm looking forward to a bright future! I hope you'll always be a part of it."
+        "Sat": "Demetrius' job is more important to him than anything else. I’m glad I finally decided to move on.",
+        "Thu": "I tried talking to Demetrius about spending more time with the family, but he just didn't listen. His research always came first.",
+        "Mon": "Demetrius and I have decided to separate. We've filed for divorce with Mayor Lewis.#$b#I really appreciate your advice earlier. I'm at peace with our decision.",
+        "Fri": "I've been sleeping in Maru's room now that Demetrius and I are divorced. It's kind of her to make some space for me.#$e#She's really wonderful.",
+        "Wed": "I'm looking forward to a bright future! I hope you'll always be a part of it."
       },
       "When": {
         "HasFlag": "RobinDateable"

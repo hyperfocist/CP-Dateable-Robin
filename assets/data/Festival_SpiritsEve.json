@@ -1,0 +1,30 @@
+{
+  "Changes": [
+    {
+      "LogName": "Update Spirits Eve Festival",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Robin 36 59 right",
+          "Delimiter": "/"
+        }
+      ]
+    }
+  ]
+}
+
+TODO: Review this festival in Vanilla
+
+"set-up": "advancedMove Demetrius true 3 18000 4 3000" //Robin wasnt included here
+"Robin": "Well, winter's almost here. It's a great time to stockpile wood and stone.",
+"Demetrius": "I haven't seen Maru in hours... I hope she's alright.",
+
+"set-up_y2": "advancedMove Robin true 4 8500 2 0 1 500 4 6250 3 650 -2 0 3 400 4 500"
+"Robin_y2": "Are you looking forward to things slowing down soon? Winter is around the corner.$0",
+"Demetrius_y2": "Did you know... a study in the Journal of Anthropological Physiology found that the cadence, tempo, and key of music can have a measurable impact on cortisol levels?#$e#Er... Is there vanilla ice cream to go with the blackberry cobbler?$0",

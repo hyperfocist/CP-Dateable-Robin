@@ -1,23 +1,23 @@
 {
   "Changes": [
     {
-      "LogName": "Marriage sprites",
+      "LogName": "Marriage & dating sprites",
       "Action": "EditImage",
       "Target": "Characters/Robin",
       "FromFile": "assets/character/Robin_Married.png",
       "When": {
-        "Relationship:Robin |contains=Married": "true",
+        "Relationship:Robin": "Married, Engaged, Dating",
         "Season": "Spring, Summer, Fall"
         //"DayEvent: |contains=flower dance, wedding": "false" //this works for flower dance
       }
     },
     {
-      "LogName": "Marriage sprites winter",
+      "LogName": "Marriage & dating sprites winter",
       "Action": "EditImage",
       "Target": "Characters/Robin",
       "FromFile": "assets/character/Robin_Married_Winter.png",
       "When": {
-        "Relationship:Robin |contains=Married": "true",
+        "Relationship:Robin": "Married, Engaged, Dating",
         "DayEvent: |contains=wedding": "false",
         "Season": "Winter"
       }
