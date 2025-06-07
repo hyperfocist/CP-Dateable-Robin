@@ -1,0 +1,99 @@
+{
+  "Format": "2.3.0",
+  "Changes": [
+    {
+      "LogName": "Update characters",
+      "Action": "Include",
+      "FromFile": "assets/character/Characters.json"
+    },
+    {
+      "LogName": "Update schedules",
+      "Action": "Include",
+      "FromFile": "assets/schedules/Schedules.json"
+    },
+    {
+      "LogName": "Update festivals",
+      "Action": "Include",
+      "FromFile": "assets/data/Festivals.json"
+    },
+    {
+      "LogName": "Update shops",
+      "Action": "Include",
+      "FromFile": "assets/data/Shops.json"
+    },
+    {
+      "LogName": "Update maps",
+      "Action": "Include",
+      "FromFile": "assets/maps/Maps.json"
+    },
+    {
+      "LogName": "Marriage dialog",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/MarriageDialogueRobin.json"
+    },
+    {
+      "LogName": "Robin dialog",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/DialogueRobin.json"
+    },
+    {
+      "LogName": "Demetrius dialog",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/DialogueDemetrius.json"
+    },
+    {
+      "LogName": "Maru dialog",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/DialogueMaru.json"
+    },
+    {
+      "LogName": "Update events",
+      "Action": "Include",
+      "FromFile": "assets/events/Events.json"
+    },
+    {
+      "LogName": "Update strings",
+      "Action": "Include",
+      "FromFile": "assets/strings/Strings.json"
+    },
+    {
+      "LogName": "Update portraits",
+      "Action": "Include",
+      "FromFile": "assets/portraits/Portraits.json"
+    },
+    {
+      "LogName": "Update sprites",
+      "Action": "Include",
+      "FromFile": "assets/character/Sprites.json"
+    }
+    /*{
+      "LogName": "Demetrius leaves the valley test", //Works, although 'debug where Demetrius' will still show him in-world (but he never moves)
+      //maybe add a custom map for him to spawn into... Also, removing him would require updating game-wide dialog & events
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_DemetriusLeaves": {
+          "Id": "{{ModId}}_DemetriusLeaves",
+          "Trigger": "DayStarted",
+          "Actions": [
+            "SetNpcInvisible Demetrius 1"
+          ]
+        }
+      },
+      "When": {
+        "Relationship:Robin |contains=Married": "true"
+      }
+    },*/
+    /*{
+      "LogName": "Flower dance sprites", //Tested OK
+      "Action": "EditImage",
+      "Target": "Characters/Robin",
+      "FromFile": "assets/character/Robin_FlowerDance.png",
+      "When": {
+        "Relationship:Robin |contains=Married, Engaged": "true",
+        "DayEvent": "flower dance" //this works
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    }*/
+  ]
+}

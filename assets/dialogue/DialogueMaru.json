@@ -1,0 +1,37 @@
+{
+  "Changes": [
+    {
+      "LogName": "Maru dialog updates",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        "dating_Robin_memory_oneday": "Wow, you and Mom, this is... unexpected. I always thought you and I... nevermind.#$e#You and Mom seem very happy though, so that’s all that really matters.",
+        "married_Robin": "Never imagined you'd end up being my stepdad. Life's funny sometimes.^Never imagined you'd end up being my stepmom. Life's funny sometimes."
+      }
+    },
+    {
+      "LogName": "Maru dialog updates - Robin moved in",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        "dating_Robin_memory_oneday": "Wow, you and Mom, this is... unexpected. I always thought you and I... nevermind.#$e#You and Mom seem very happy though, so that’s all that really matters.",
+        "married_Robin": "Never imagined you'd end up being my stepdad. Life's funny sometimes.^Never imagined you'd end up being my stepmom. Life's funny sometimes.",
+        "Fri": "Mom and I are sharing my room.#$b#It's a little crowded but it's nice to have some girl time.",
+        "Sun": "Mom is single and ready to mingle, again.#$b#She's moved into my room until she figures something out.",
+        "Mon2": "Mom moved into my room.#$b#It's nice to have some help keeping it clean.",
+        "Wed2": "Mom and I are cozying up in my room.#$b#It's a bit cramped, but it's fun to have some quality time together.",
+        "Tue4": "Mom and I are sharing my space.#$b#It's a little snug, but she's been a huge help on my projects.",
+        "Wed4": "Mom is single again and has decided to share my room.#$b#I think she really appreciates the companionship",
+        "Wed6": "Mom and I are cozying up in my room.#$b#It's a bit cramped, but it's fun to have some quality time together.",
+        "Thu6": "Mom and I are sharing my space.#$b#It's a little snug, but it's great to have some girly bonding.",
+        "Tue8": "Mom and I are making do in my room.#$b#She's really encouraging about my projects.",
+        "Fri8": "Mom is single again and has decided to share my room.#$b#My furniture has never been in better shape!"
+      },
+      "When": {
+        "Relationship:Robin |contains=Married": "false", //Robin not living at farm (includes divorced)
+        "Relationship:Maru |contains=Married": "false", //Maru still living at sciencehouse
+        "HasFlag": "DateableRobin"
+      }
+    }
+  ]
+}
