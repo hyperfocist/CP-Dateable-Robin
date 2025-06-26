@@ -14,11 +14,11 @@
     {
       "LogName": "Marriage & dating sprites winter",
       "Action": "EditImage",
-      "Target": "Characters/Robin",
+      "Target": "Characters/Robin_Winter",
       "FromFile": "assets/character/Robin_Married_Winter.png",
       "When": {
-        "Relationship:Robin": "Married, Engaged, Dating",
-        "DayEvent: |contains=wedding": "false",
+        //"Relationship:Robin": "Married, Engaged, Dating",
+        //"DayEvent: |contains=wedding": "false",
         "Season": "Winter"
       }
     },
