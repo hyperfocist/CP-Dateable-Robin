@@ -18,7 +18,6 @@
       "FromFile": "assets/character/Robin_Married_Winter.png",
       "When": {
         //"Relationship:Robin": "Married, Engaged, Dating",
-        //"DayEvent: |contains=wedding": "false",
         "Season": "Winter"
       }
     },
@@ -54,7 +53,6 @@
       "Target": "Characters/Robin",
       "FromFile": "assets/character/Robin_Wedding_Day.png",
       "When": {
-        //"Relationship:Robin |contains=Married, Engaged": "true",
         "DayEvent": "wedding",
         "LocationName": "Town" //does this fix: the When field is invalid: 'Location' can't be used as a token because that token could not be found.
       },

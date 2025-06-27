@@ -108,7 +108,8 @@
       "Target": "Characters/Dialogue/MarriageDialogueRobin",
       "Entries":
       {
-        "funLeave_Robin": "{{Random: I look forward to growing old with you., Did anyone live here before your grandfather?, What do you have going on today?, If you go into town make sure and say hi to everyone for me., Im going to clean the fridge tomorrow., I wish we had a bank to keep our money in. I guess our town is just too small to have one., I wonder what the other moms are doing today?, I dont really feel like doing anything today., Its amazing how clean were able to keep the house.#$e#I thought it would be worse living on a farm., I hope well live here our entire lives.}}",        "funReturn_Robin": "Welcome home, hon. How was your day?"
+        "funLeave_Robin": "{{Random: I look forward to growing old with you., Did anyone live here before your grandfather?, What do you have going on today?, If you go into town make sure and say hi to everyone for me., Im going to clean the fridge tomorrow., I wish we had a bank to keep our money in. I guess our town is just too small to have one., I wonder what the other moms are doing today?, I dont really feel like doing anything today., Its amazing how clean were able to keep the house.#$e#I thought it would be worse living on a farm., I hope well live here our entire lives.}}",
+        "funReturn_Robin": "Welcome home, hon. How was your day?"
       },
       "When": {
         "Hearts:Robin": "{{Range: 8, 11}}"

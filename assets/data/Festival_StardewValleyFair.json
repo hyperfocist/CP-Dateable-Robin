@@ -13,21 +13,9 @@
           ],
           "Value": "Robin 36 59 right",
           "Delimiter": "/"
-        },
-
+        }
       ]
     }
 
   ]
 }
-
-TODO: Review this festival in Vanilla
-
-set-up: advancedMove Robin true 0 1 1 5000 0 -2 3 5000 0 1 1 5000
-"Robin": "Woodworking is an ancient tradition that I'm very proud to be a part of.$h",
-"Demetrius": "This fair brings materials from all over the valley together into one place. It's an excellent opportunity to advance my research.",
-
-
-set-up_y2: advancedMove Robin true 4 4500 3 300 -1 0 0 -2 4 300 1 5000 2 300 0 2 1 0 1 300 4 1000  advancedMove Demetrius true 1 6500 2 300 0 3 3 0 1 300 4 5500 3 300 -3 0 0 -3 4 300 1 2000
-"Robin_y2": "If you want to master the wood, you have to think like a tree...$0",
-"Demetrius_y2": "Sheep have remarkable memory capabilities... retaining familiarity with both fellow sheep and humans...$0#$e#They even form friendships, mirroring the close bonds we humans cultivate with one another!$1",
