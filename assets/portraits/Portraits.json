@@ -2,19 +2,19 @@
   "Changes": [
     {
       "LogName": "Update Robin's regular portraits",
-      "Action": "Load",
+      "Action": "EditImage",
       "Target": "Portraits/Robin",
       "FromFile": "assets/portraits/robin_portrait.png"
     },
     {
       "LogName": "Update Robin's winter portraits",
-      "Action": "Load",
+      "Action": "EditImage",
       "Target": "Portraits/Robin_Winter",
       "FromFile": "assets/portraits/robin_winter_portrait.png"
     },
     {
       "LogName": "Update Robin's beach portraits",
-      "Action": "Load",
+      "Action": "EditImage",
       "Target": "Portraits/Robin_Beach",
       "FromFile": "assets/portraits/robin_beach_portrait.png"
     }
