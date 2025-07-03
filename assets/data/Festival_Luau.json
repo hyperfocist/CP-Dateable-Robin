@@ -5,10 +5,10 @@
       "Action": "EditData",
       "Target": "Data/Festivals/summer11",
       "Entries": {
-        "Robin": "I hope Demetrius will spend some time with Maru and Sebby today",
-        "Demetrius": "I just spoke with Sebby & Maru, they both seem to be enjoying themselves.",
-        "Robin_y2": "I'm hoping that Demetrius will hang out with Sebby and Maru today.",
-        "Demetrius_y2": " Sebby, Maru and I are going to eat together after the ceremony."
+        "Robin": "{{i18n:festival.summer11.Robin}}",
+        "Demetrius": "{{i18n:festival.summer11.Demetrius}}",
+        "Robin_y2": "{{i18n:festival.summer11.Robin_y2}}",
+        "Demetrius_y2": "{{i18n:festival.summer11.Demetrius_y2}}"
       },
       "TextOperations": [
         {

@@ -5,8 +5,8 @@
       "Action": "EditData",
       "Target": "Data/EngagementDialogue",
       "Entries": {
-        "Robin0": "I'm so looking forward to being married to you, @.$1#$b# Like they say, the third time is the charm!$4",
-        "Robin1": "I can't wait to live with you on the farm. We're going to have a great life together."
+        "Robin0": "{{i18n:dialog.robin.engaged.Robin0}}",
+        "Robin1": "{{i18n:dialog.robin.engaged.Robin1}}"
       }
     },
     {
@@ -14,26 +14,26 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
-        "AcceptBouquet": "You want to get serious?#$b#Me too!$1#$b#I'm so glad you feel the same way.$l",
-        "Sun6": "{{i18n:Robin.Dialogue.Sun6}}",
-        "dating_Robin": "Let me tell Demetrius and the kids that we're dating.#$b#They should hear it from me first.",
-        "dating_Robin_memory_oneday": "I'm feeling very scattered today.$l",
-        "dating_Robin_memory_oneyear": "We've been dating for a year already! We should celebrate tonight.$h",
-        "FlowerDance_Accept_Spouse": "Of course...#$b#*whisper* I'm glad you asked. I'll reward you later.$l",
-        "FlowerDance_Accept": "Yes, I'd love to dance with you!",
-        "divorced": "Leave me alone. Thanks to you, I'm a three time loser.$a#$b#Please, just go away.$s",
-        "RejectBouquet_Divorced": "Get lost.",
-        "breakUp": "I risked my marriage and family because I thought you were serious.$a#$b#I was such a fool.$s",
-        "Mon2": "Demetrius has been really busy with his research lately. I hope starts getting more rest soon.",
-        "Wed2": "Demetrius is always buried in his research. I wonder if his workload will ever get lighter.",
-        "Sun2": "Demetrius has been spending a lot of late nights at the lab. He's really dedicated to his work.",
-        "Mon4": "Demetrius is working something big, but I sometimes miss just hanging out together.",
-        "Thu4": "I miss having dinners with Demetrius. I'm feeling less connected to him.",
-        "Wed4": "I understand Demetrius' work is important, but there's a distance growing between us that I can't seem to bridge.",
-        "Sat6": "Demetrius' job is more important to him than anything else. I'm grateful that I have my own career to keep me fulfilled.#$e#I really love carpentry.'",
-        "Thu6": "Demetrius isn't spending much time with the family, but I think the kids and I are growing even closer.",
-        "Mon6": "I have a lot of evening time to myself these days. I haven't had this much time to read since before Sebby was born.",
-        "Wed6": "It's no secret I'm feeling lonely, but at least I have a stable life here.#$b#I'm luckier than many others."
+        "AcceptBouquet": "{{i18n:dialog.robin.core.AcceptBouquet}}",
+        "Sun6": "{{i18n:dialog.robin.core.Sun6 {{ImportToken}} }}",
+        "dating_Robin": "{{i18n:dialog.robin.core.dating_Robin}}",
+        "dating_Robin_memory_oneday": "{{i18n:dialog.robin.core.dating_Robin_memory_oneday}}",
+        "dating_Robin_memory_oneyear": "{{i18n:dialog.robin.core.dating_Robin_memory_oneyear}}",
+        "FlowerDance_Accept_Spouse": "{{i18n:dialog.robin.core.FlowerDance_Accept_Spouse}}",
+        "FlowerDance_Accept": "{{i18n:dialog.robin.core.FlowerDance_Accept}}",
+        "divorced": "{{i18n:dialog.robin.core.divorced}}",
+        "RejectBouquet_Divorced": "{{i18n:dialog.robin.core.RejectBouquet_Divorced}}",
+        "breakUp": "{{i18n:dialog.robin.core.breakUp}}",
+        "Mon2": "{{i18n:dialog.robin.core.Mon2}}",
+        "Wed2": "{{i18n:dialog.robin.core.Wed2}}",
+        "Sun2": "{{i18n:dialog.robin.core.Sun2}}",
+        "Mon4": "{{i18n:dialog.robin.core.Mon4}}",
+        "Thu4": "{{i18n:dialog.robin.core.Thu4}}",
+        "Wed4": "{{i18n:dialog.robin.core.Wed4}}",
+        "Sat6": "{{i18n:dialog.robin.core.Sat6}}",
+        "Thu6": "{{i18n:dialog.robin.core.Thu6}}",
+        "Mon6": "{{i18n:dialog.robin.core.Mon6}}",
+        "Wed6": "{{i18n:dialog.robin.core.Wed6}}"
       }
     },
     {
@@ -41,7 +41,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
-        "Saloon_Fri": "{{Random: I guess Demetrius isn't coming dancing tonight.#$e#I wish he could break away from work.$2, I guess I'm alone again tonight.#$e#Demetrius doesn’t seem to come dancing anymore.$2, Demetrius is missing out on dancing again.#$e#Do you think he misses it?$2}}"
+        "Saloon_Fri": "{{i18n:dialog.robin.saloon.Saloon_Fri {{ImportToken}} }}"
       },
       "When": {
         "query: {{Hearts:Robin}} >= 4": true,
@@ -53,11 +53,11 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
-        "Sat": "Demetrius' job is more important to him than anything else. I’m glad I finally decided to move on.",
-        "Thu": "I tried talking to Demetrius about spending more time with the family, but he just didn't listen. His research always came first.",
-        "Mon": "Demetrius and I have decided to separate. We've filed for divorce with Mayor Lewis.#$b#I really appreciate your advice earlier. I'm at peace with our decision.",
-        "Fri": "I've been sleeping in Maru's room now that Demetrius and I are divorced. It's kind of her to make some space for me.#$e#She's really wonderful.",
-        "Wed": "I'm looking forward to a bright future! I hope you'll always be a part of it."
+        "Sat": "{{i18n:dialog.robin.dateable.Sat}}",
+        "Thu": "{{i18n:dialog.robin.dateable.Thu}}",
+        "Mon": "{{i18n:dialog.robin.dateable.Mon}}",
+        "Fri": "{{i18n:dialog.robin.dateable.Fri}}",
+        "Wed": "{{i18n:dialog.robin.dateable.Wed}}"
       },
       "When": {
         "HasFlag": "RobinDateable"
@@ -69,8 +69,8 @@
       "Target": "Characters/Dialogue/Robin",
       "Entries":
       {
-        "GreenRain": "Demetrius made us all very afraid of the green rain but I'm much more relaxed about it now.#$b#I'm still going to take the day off, though.$4",
-        "GreenRainFinished": "I'm not thrilled about the green rain. But I sure enjoyed a day off!$h"
+        "GreenRain": "{{i18n:dialog.robin.greenrain.GreenRain}}",
+        "GreenRainFinished": "{{i18n:dialog.robin.greenrain.GreenRainFinished}}"
       },
       "When": {
         "Spouse": "Robin"
