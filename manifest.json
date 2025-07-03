@@ -4,7 +4,7 @@
   "Version": "1.0.0-beta.3",
   "Description": "A mod that lets you date (and marry) Robin.",
   "UniqueID": "Hyperfocist.DateableRobin",
-  "UpdateKeys": [ "Nexus:35126" ], //see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
+  "UpdateKeys": [ "Nexus:35126", "https://github.com/hyperfocist/CP-Dateable-Robin" ], //see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
