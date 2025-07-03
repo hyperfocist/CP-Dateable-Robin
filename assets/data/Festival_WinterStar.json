@@ -4,6 +4,9 @@
       "LogName": "Update Feast of the Winter Star",
       "Action": "EditData",
       "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "Robin": "{{i18n:festival.winter25.Robin}}"
+      },
       "TextOperations": [
         {
           "Operation": "Append",
@@ -18,13 +21,3 @@
     }
   ]
 }
-
-TODO: Review this festival in Vanilla
-
-"set-up": //nothing for robin or demetrius
-"Robin": "Hiya, @. You're welcome to join our family table if you need company.$h",
-"Demetrius": "I'll probably get another tool set this year... *sigh*",
-
-"set-up_y2": "animate Robin false true 100 24 25 26 24 25 26 24 25 26 24 25 26 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27" //Demetrius wasnt included here
-"Robin_y2": "Ice sculpting is a rewarding challenge for me. It's a distinct material that I'm not used to!",
-"Demetrius_y2": "Water ice... a most profound substance, indeed. Necessary for life, it makes a fitting material for statuary meant to represent the living form.",

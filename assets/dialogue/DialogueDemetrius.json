@@ -5,8 +5,8 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Demetrius",
       "Entries": {
-        "dating_Robin_memory_oneday": "Robin told me that you two are dating now.#$b#I hope that your analytical skills exceed mine here, and that your relationship achieves a satisfactory level of happiness.",
-        "married_Robin": "Congratulations, @. I hope you and Robin are very happy together."
+        "dating_Robin_memory_oneday": "{{i18n:dialog.demetrius.dating_Robin_memory_oneday}}",
+        "married_Robin": "{{i18n:dialog.demetrius.married_Robin}}"
       }
     },
     {
@@ -14,20 +14,20 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Demetrius",
       "Entries": {
-        "GreenRain": "Don't mind me, @. I'm just collecting some samples. This may be a once-in-a-lifetime opportunity!$7#$e#Erm... If you see my wife, can you tell her I'm okay?$7",
-        "Resort_Chair": "Are you here to work, @? There are many fascinating opportunities here!",
-        "pamHouseUpgradeAnonymous": "Robin won't even tell *me* who paid for Pam's new house!#$e#I'm glad she's so loyal to her word...$h",
-        "Mon_inlaw_Maru": "It's hard to do good science without Maru's help...#$b#But she seems to be happy.",
-        "Thu": "How's the farming business going? It's parsnip season, isn't it?#$e#I can imagine it take a lot of effort, working outdoors with plants all day.",
-        "Wed_2": "Do you think emotions follow a predictable pattern?#$b#I've been trying to graph Robin's, but the results are inconclusive so far.",
-        "Sun_2": "I've developed a hypothesis about Robin's mood fluctuations, but I need at least another month of observation to confirm it.#$b#I'm not sure when I'll find the time, though.",
-        "summer_Tue": "Robin mentioned she's upset about how much I’ve been working. I haven't had the chance to fully analyze her emotions yet.",
-        "summer_Thu": "I've been analyzing the ecosystem around Stardew Valley for years now. The data is... overwhelming. There's so much left to study.",
-        "fall_Thu": "Robin seems angry these days.#$b#Do you think it’s possible that, like a plant under stress, she’s reacting to an external factor I haven't yet accounted for?",
-        "fall_Wed": "When my research slows down, I'll need to set aside some time to really evaluate Robin's apparent unhappiness.",
-        "winter_Mon": "I've developed a hypothesis about Robin's mood fluctuations, but I need at least another month of observation to confirm it.#$b#I'm not sure when I'll find the time, though.",
-        "winter_Sun": "Feel free to harvest as much lumber and stone from this area as you please.#$b#I've completed my research on them.",
-        "winter_Fri": "I've been analyzing the ecosystem around Stardew Valley for years now. The data is... overwhelming. There's so much left to study."
+        "GreenRain": "{{i18n:dialog.demetrius.dating.GreenRain}}",
+        "Resort_Chair": "{{i18n:dialog.demetrius.dating.Resort_Chair}}",
+        "pamHouseUpgradeAnonymous": "{{i18n:dialog.demetrius.dating.pamHouseUpgradeAnonymous}}",
+        "Mon_inlaw_Maru": "{{i18n:dialog.demetrius.dating.Mon_inlaw_Maru}}",
+        "Thu": "{{i18n:dialog.demetrius.dating.Thu}}",
+        "Wed_2": "{{i18n:dialog.demetrius.dating.Wed_2}}",
+        "Sun_2": "{{i18n:dialog.demetrius.dating.Sun_2}}",
+        "summer_Tue": "{{i18n:dialog.demetrius.dating.summer_Tue}}",
+        "summer_Thu": "{{i18n:dialog.demetrius.dating.summer_Thu}}",
+        "fall_Thu": "{{i18n:dialog.demetrius.dating.fall_Thu}}",
+        "fall_Wed": "{{i18n:dialog.demetrius.dating.fall_Wed}}",
+        "winter_Mon": "{{i18n:dialog.demetrius.dating.winter_Mon}}",
+        "winter_Sun": "{{i18n:dialog.demetrius.dating.winter_Sun}}",
+        "winter_Fri": "{{i18n:dialog.demetrius.dating.winter_Fri}}"
       },
       "When": {
         "HasFlag |contains=DateableRobin": "false"
@@ -38,22 +38,22 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Demetrius",
       "Entries": {
-        "dating_Robin_memory_oneday": "Robin told me that you two are dating now.#$b#I hope that your analytical skills exceed mine here, and that your relationship achieves a satisfactory level of happiness.",
-        "married_Robin": "Congratulations, @. I hope you and Robin are very happy together.",
-        "GreenRain": "Don't mind me, @. I'm just collecting some samples. This may be a once-in-a-lifetime opportunity!$7",
-        "Resort_Chair": "Are you here to work, @? There are many fascinating opportunities here!",
-        "pamHouseUpgradeAnonymous": "Robin won't tell anyone who paid for Pam's new house!#$e#She's always been loyal to her word...",
-        "Mon_inlaw_Maru": "It's hard to do good science without Maru's help...#$b#But she seems to be happy.",
-        "Thu": "How's the farming business going? It's parsnip season, isn't it?#$e#I can imagine it take a lot of effort, working outdoors with plants all day.",
-        "Wed_2": "I suspect I'm at fault for my divorce, but the variables leading to this outcome remain unclear.",
-        "Sun_2": "This valley's ecosystem holds secrets that could revolutionize environmental science.#$b#I can't let my personal setbacks deter me.",
-        "summer_Tue": "I've calculated that without marital obligations, I can increase my research output by 37.8%.#$b#At least I have that silver lining.",
-        "summer_Thu": "I've calculated that without marital obligations, I can increase my research output by 37.8%.#$b#At least I have that silver lining.",
-        "fall_Thu": "This valley's ecosystem holds secrets that could revolutionize environmental science.#$b#I can't let my relationship setbacks deter me.",
-        "fall_Wed": "Robin always said I was married to my work. I suppose now it's official, isn't it?#$b#...That was an attempt at humor.",
-        "winter_Mon": "The Department of Environmental Sciences at Zuzu University has expressed interest in my research#$b#My hard work has finally started paying off.#$b#This could be huge for my career.",
-        "winter_Sun": "Feel free to harvest as much lumber and stone from this area as you please.#$b#I've completed my research on them.",
-        "winter_Fri": "Robin and I... we're no longer together. I suspect I'm at fault, but the variables leading to this outcome remain unclear."
+        "dating_Robin_memory_oneday": "{{i18n:dialog.demetrius.separated.dating_Robin_memory_oneday}}",
+        "married_Robin": "{{i18n:dialog.demetrius.separated.married_Robin}}",
+        "GreenRain": "{{i18n:dialog.demetrius.separated.GreenRain}}",
+        "Resort_Chair": "{{i18n:dialog.demetrius.separated.Resort_Chair}}",
+        "pamHouseUpgradeAnonymous": "{{i18n:dialog.demetrius.separated.pamHouseUpgradeAnonymous}}",
+        "Mon_inlaw_Maru": "{{i18n:dialog.demetrius.separated.Mon_inlaw_Maru}}",
+        "Thu": "{{i18n:dialog.demetrius.separated.Thu}}",
+        "Wed_2": "{{i18n:dialog.demetrius.separated.Wed_2}}",
+        "Sun_2": "{{i18n:dialog.demetrius.separated.Sun_2}}",
+        "summer_Tue": "{{i18n:dialog.demetrius.separated.summer_Tue}}",
+        "summer_Thu": "{{i18n:dialog.demetrius.separated.summer_Thu}}",
+        "fall_Thu": "{{i18n:dialog.demetrius.separated.fall_Thu}}",
+        "fall_Wed": "{{i18n:dialog.demetrius.separated.fall_Wed}}",
+        "winter_Mon": "{{i18n:dialog.demetrius.separated.winter_Mon}}",
+        "winter_Sun": "{{i18n:dialog.demetrius.separated.winter_Sun}}",
+        "winter_Fri": "{{i18n:dialog.demetrius.separated.winter_Fri}}"
       },
       "When": {
         "HasFlag": "DateableRobin"

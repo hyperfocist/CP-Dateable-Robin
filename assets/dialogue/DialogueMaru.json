@@ -5,8 +5,8 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Maru",
       "Entries": {
-        "dating_Robin_memory_oneday": "Wow, you and Mom, this is... unexpected. I always thought you and I... nevermind.#$e#You and Mom seem very happy though, so that’s all that really matters.",
-        "married_Robin": "Never imagined you'd end up being my stepdad. Life's funny sometimes.^Never imagined you'd end up being my stepmom. Life's funny sometimes."
+        "dating_Robin_memory_oneday": "{{i18n:dialog.maru.dating_Robin_memory_oneday}}",
+        "married_Robin": "{{i18n:dialog.maru.married_Robin}}"
       }
     },
     {
@@ -14,18 +14,18 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/Maru",
       "Entries": {
-        "dating_Robin_memory_oneday": "Wow, you and Mom, this is... unexpected. I always thought you and I... nevermind.#$e#You and Mom seem very happy though, so that’s all that really matters.",
-        "married_Robin": "Never imagined you'd end up being my stepdad. Life's funny sometimes.^Never imagined you'd end up being my stepmom. Life's funny sometimes.",
-        "Fri": "Mom and I are sharing my room.#$b#It's a little crowded but it's nice to have some girl time.",
-        "Sun": "Mom is single and ready to mingle, again.#$b#She's moved into my room until she figures something out.",
-        "Mon2": "Mom moved into my room.#$b#It's nice to have some help keeping it clean.",
-        "Wed2": "Mom and I are cozying up in my room.#$b#It's a bit cramped, but it's fun to have some quality time together.",
-        "Tue4": "Mom and I are sharing my space.#$b#It's a little snug, but she's been a huge help on my projects.",
-        "Wed4": "Mom is single again and has decided to share my room.#$b#I think she really appreciates the companionship",
-        "Wed6": "Mom and I are cozying up in my room.#$b#It's a bit cramped, but it's fun to have some quality time together.",
-        "Thu6": "Mom and I are sharing my space.#$b#It's a little snug, but it's great to have some girly bonding.",
-        "Tue8": "Mom and I are making do in my room.#$b#She's really encouraging about my projects.",
-        "Fri8": "Mom is single again and has decided to share my room.#$b#My furniture has never been in better shape!"
+        "dating_Robin_memory_oneday": "{{i18n:dialog.maru.separated.dating_Robin_memory_oneday}}",
+        "married_Robin": "{{i18n:dialog.maru.separated.married_Robin}}",
+        "Fri": "{{i18n:dialog.maru.separated.Fri}}",
+        "Sun": "{{i18n:dialog.maru.separated.Sun}}",
+        "Mon2": "{{i18n:dialog.maru.separated.Mon2}}",
+        "Wed2": "{{i18n:dialog.maru.separated.Wed2}}",
+        "Tue4": "{{i18n:dialog.maru.separated.Tue4}}",
+        "Wed4": "{{i18n:dialog.maru.separated.Wed4}}",
+        "Wed6": "{{i18n:dialog.maru.separated.Wed6}}",
+        "Thu6": "{{i18n:dialog.maru.separated.Thu6}}",
+        "Tue8": "{{i18n:dialog.maru.separated.Tue8}}",
+        "Fri8": "{{i18n:dialog.maru.separated.Fri8}}"
       },
       "When": {
         "Relationship:Robin |contains=Married": "false", //Robin not living at farm (includes divorced)
