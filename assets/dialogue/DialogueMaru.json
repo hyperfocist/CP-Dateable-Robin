@@ -1,31 +1,31 @@
 {
   "Changes": [
     {
-      "LogName": "Maru dialog updates",
+      "LogName": "Maru dialogue updates",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Maru",
       "Entries": {
-        "dating_Robin_memory_oneday": "{{i18n:dialog.maru.dating_Robin_memory_oneday}}",
-        "married_Robin": "{{i18n:dialog.maru.married_Robin}}"
+        "dating_Robin_memory_oneday": "{{i18n:dialogue.maru.dating_Robin_memory_oneday}}",
+        "married_Robin": "{{i18n:dialogue.maru.married_Robin}}"
       }
     },
     {
-      "LogName": "Maru dialog updates - Robin moved in",
+      "LogName": "Maru dialogue updates - Robin moved in",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Maru",
       "Entries": {
-        "dating_Robin_memory_oneday": "{{i18n:dialog.maru.separated.dating_Robin_memory_oneday}}",
-        "married_Robin": "{{i18n:dialog.maru.separated.married_Robin}}",
-        "Fri": "{{i18n:dialog.maru.separated.Fri}}",
-        "Sun": "{{i18n:dialog.maru.separated.Sun}}",
-        "Mon2": "{{i18n:dialog.maru.separated.Mon2}}",
-        "Wed2": "{{i18n:dialog.maru.separated.Wed2}}",
-        "Tue4": "{{i18n:dialog.maru.separated.Tue4}}",
-        "Wed4": "{{i18n:dialog.maru.separated.Wed4}}",
-        "Wed6": "{{i18n:dialog.maru.separated.Wed6}}",
-        "Thu6": "{{i18n:dialog.maru.separated.Thu6}}",
-        "Tue8": "{{i18n:dialog.maru.separated.Tue8}}",
-        "Fri8": "{{i18n:dialog.maru.separated.Fri8}}"
+        "dating_Robin_memory_oneday": "{{i18n:dialogue.maru.separated.dating_Robin_memory_oneday}}",
+        "married_Robin": "{{i18n:dialogue.maru.separated.married_Robin}}",
+        "Fri": "{{i18n:dialogue.maru.separated.Fri}}",
+        "Sun": "{{i18n:dialogue.maru.separated.Sun}}",
+        "Mon2": "{{i18n:dialogue.maru.separated.Mon2}}",
+        "Wed2": "{{i18n:dialogue.maru.separated.Wed2}}",
+        "Tue4": "{{i18n:dialogue.maru.separated.Tue4}}",
+        "Wed4": "{{i18n:dialogue.maru.separated.Wed4}}",
+        "Wed6": "{{i18n:dialogue.maru.separated.Wed6}}",
+        "Thu6": "{{i18n:dialogue.maru.separated.Thu6}}",
+        "Tue8": "{{i18n:dialogue.maru.separated.Tue8}}",
+        "Fri8": "{{i18n:dialogue.maru.separated.Fri8}}"
       },
       "When": {
         "Relationship:Robin |contains=Married": "false", //Robin not living at farm (includes divorced)

@@ -1,47 +1,47 @@
 {
   "Changes": [
     {
-      "LogName": "Robin's engagement dialog",
+      "LogName": "Robin's engagement dialogue",
       "Action": "EditData",
       "Target": "Data/EngagementDialogue",
       "Entries": {
-        "Robin0": "{{i18n:dialog.robin.engaged.Robin0}}",
-        "Robin1": "{{i18n:dialog.robin.engaged.Robin1}}"
+        "Robin0": "{{i18n:dialogue.robin.engaged.Robin0}}",
+        "Robin1": "{{i18n:dialogue.robin.engaged.Robin1}}"
       }
     },
     {
-      "LogName": "Update Robin's core dialog",
+      "LogName": "Update Robin's core dialogue",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
-        "AcceptBouquet": "{{i18n:dialog.robin.core.AcceptBouquet}}",
-        "Sun6": "{{i18n:dialog.robin.core.Sun6 {{ImportToken}} }}",
-        "dating_Robin": "{{i18n:dialog.robin.core.dating_Robin}}",
-        "dating_Robin_memory_oneday": "{{i18n:dialog.robin.core.dating_Robin_memory_oneday}}",
-        "dating_Robin_memory_oneyear": "{{i18n:dialog.robin.core.dating_Robin_memory_oneyear}}",
-        "FlowerDance_Accept_Spouse": "{{i18n:dialog.robin.core.FlowerDance_Accept_Spouse}}",
-        "FlowerDance_Accept": "{{i18n:dialog.robin.core.FlowerDance_Accept}}",
-        "divorced": "{{i18n:dialog.robin.core.divorced}}",
-        "RejectBouquet_Divorced": "{{i18n:dialog.robin.core.RejectBouquet_Divorced}}",
-        "breakUp": "{{i18n:dialog.robin.core.breakUp}}",
-        "Mon2": "{{i18n:dialog.robin.core.Mon2}}",
-        "Wed2": "{{i18n:dialog.robin.core.Wed2}}",
-        "Sun2": "{{i18n:dialog.robin.core.Sun2}}",
-        "Mon4": "{{i18n:dialog.robin.core.Mon4}}",
-        "Thu4": "{{i18n:dialog.robin.core.Thu4}}",
-        "Wed4": "{{i18n:dialog.robin.core.Wed4}}",
-        "Sat6": "{{i18n:dialog.robin.core.Sat6}}",
-        "Thu6": "{{i18n:dialog.robin.core.Thu6}}",
-        "Mon6": "{{i18n:dialog.robin.core.Mon6}}",
-        "Wed6": "{{i18n:dialog.robin.core.Wed6}}"
+        "AcceptBouquet": "{{i18n:dialogue.robin.core.AcceptBouquet}}",
+        "Sun6": "{{i18n:dialogue.robin.core.Sun6}}",
+        "dating_Robin": "{{i18n:dialogue.robin.core.dating_Robin}}",
+        "dating_Robin_memory_oneday": "{{i18n:dialogue.robin.core.dating_Robin_memory_oneday}}",
+        "dating_Robin_memory_oneyear": "{{i18n:dialogue.robin.core.dating_Robin_memory_oneyear}}",
+        "FlowerDance_Accept_Spouse": "{{i18n:dialogue.robin.core.FlowerDance_Accept_Spouse}}",
+        "FlowerDance_Accept": "{{i18n:dialogue.robin.core.FlowerDance_Accept}}",
+        "divorced": "{{i18n:dialogue.robin.core.divorced}}",
+        "RejectBouquet_Divorced": "{{i18n:dialogue.robin.core.RejectBouquet_Divorced}}",
+        "breakUp": "{{i18n:dialogue.robin.core.breakUp}}",
+        "Mon2": "{{i18n:dialogue.robin.core.Mon2}}",
+        "Wed2": "{{i18n:dialogue.robin.core.Wed2}}",
+        "Sun2": "{{i18n:dialogue.robin.core.Sun2}}",
+        "Mon4": "{{i18n:dialogue.robin.core.Mon4}}",
+        "Thu4": "{{i18n:dialogue.robin.core.Thu4}}",
+        "Wed4": "{{i18n:dialogue.robin.core.Wed4}}",
+        "Sat6": "{{i18n:dialogue.robin.core.Sat6}}",
+        "Thu6": "{{i18n:dialogue.robin.core.Thu6}}",
+        "Mon6": "{{i18n:dialogue.robin.core.Mon6}}",
+        "Wed6": "{{i18n:dialogue.robin.core.Wed6}}"
       }
     },
     {
-      "LogName": "Robin's friendly saloon dialog 4+ hearts",
+      "LogName": "Robin's friendly saloon dialogue 4+ hearts",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
-        "Saloon_Fri": "{{i18n:dialog.robin.saloon.Saloon_Fri {{ImportToken}} }}"
+        "Saloon_Fri": "{{i18n:dialogue.robin.saloon.Saloon_Fri.{{Random:1,2,3}}}}"
       },
       "When": {
         "query: {{Hearts:Robin}} >= 4": true,
@@ -49,28 +49,28 @@
       }
     },
     {
-      "LogName": "Robin's dateable dialog, she & Demetrius have divorced",
+      "LogName": "Robin's dateable dialogue, she & Demetrius have divorced",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries": {
-        "Sat": "{{i18n:dialog.robin.dateable.Sat}}",
-        "Thu": "{{i18n:dialog.robin.dateable.Thu}}",
-        "Mon": "{{i18n:dialog.robin.dateable.Mon}}",
-        "Fri": "{{i18n:dialog.robin.dateable.Fri}}",
-        "Wed": "{{i18n:dialog.robin.dateable.Wed}}"
+        "Sat": "{{i18n:dialogue.robin.dateable.Sat}}",
+        "Thu": "{{i18n:dialogue.robin.dateable.Thu}}",
+        "Mon": "{{i18n:dialogue.robin.dateable.Mon}}",
+        "Fri": "{{i18n:dialogue.robin.dateable.Fri}}",
+        "Wed": "{{i18n:dialogue.robin.dateable.Wed}}"
       },
       "When": {
         "HasFlag": "RobinDateable"
       }
     },
     {
-      "LogName": "Robin's green rain dialog",
+      "LogName": "Robin's green rain dialogue",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Robin",
       "Entries":
       {
-        "GreenRain": "{{i18n:dialog.robin.greenrain.GreenRain}}",
-        "GreenRainFinished": "{{i18n:dialog.robin.greenrain.GreenRainFinished}}"
+        "GreenRain": "{{i18n:dialogue.robin.greenrain.GreenRain}}",
+        "GreenRainFinished": "{{i18n:dialogue.robin.greenrain.GreenRainFinished}}"
       },
       "When": {
         "Spouse": "Robin"

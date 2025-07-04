@@ -7,7 +7,7 @@
       "TargetField": ["Robin"],
       "Entries": {
         "FriendsAndFamily": {
-          "Demetrius": "{{i18n:ex-husband}}"
+          "Demetrius": "{{i18n:characters.Demetrius}}"
         }
       },
       "When": {
@@ -21,7 +21,7 @@
       "TargetField": ["Demetrius"],
       "Entries": {
         "FriendsAndFamily": {
-          "Robin": "{{i18n:ex-wife}}"
+          "Robin": "{{i18n:characters.Robin}}"
         }
       },
       "When": {
@@ -69,7 +69,7 @@
       "TargetField": ["Robin"],
       "Entries": {
         "SpouseRoom": {
-          "MapAsset": "Hyperfocist_DateableRobin_SpouseRoom",
+          "MapAsset": "{{ModId}}_SpouseRoom",
           "MapSourceRect": {
             "X": 0,
             "Y": 0,
@@ -78,7 +78,7 @@
           }
         },
         "SpousePatio": {
-          "MapAsset": "Hyperfocist_DateableRobin_OutsideArea",
+          "MapAsset": "{{ModId}}_OutsideArea",
           "MapSourceRect": {
             "X": 0,
             "Y": 0,

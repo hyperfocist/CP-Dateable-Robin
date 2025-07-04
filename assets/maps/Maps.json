@@ -3,13 +3,13 @@
     {
       "LogName": "Load spouse room",
       "Action": "Load",
-      "Target": "Maps/Hyperfocist_DateableRobin_SpouseRoom",
+      "Target": "Maps/{{ModId}}_SpouseRoom",
       "FromFile": "assets/maps/spouseRoom.tmx"
     },
     {
       "LogName": "Load outside area",
       "Action": "Load",
-      "Target": "Maps/Hyperfocist_DateableRobin_OutsideArea",
+      "Target": "Maps/{{ModId}}_OutsideArea",
       "FromFile": "assets/maps/spousePatios.tmx"
     }
   ]
