@@ -1,7 +1,7 @@
 {
   "Name": "Dateable Robin for 1.6",
   "Author": "Hyperfocist",
-  "Version": "1.0.0-beta.4",
+  "Version": "1.0.0-beta.5",
   "Description": "A mod that lets you date (and marry) Robin.",
   "UniqueID": "Hyperfocist.DateableRobin",
   "UpdateKeys": [ "Nexus:35126", "https://github.com/hyperfocist/CP-Dateable-Robin" ], //see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
