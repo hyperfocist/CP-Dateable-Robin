@@ -8,7 +8,8 @@
       "Entries": {
         "FriendsAndFamily": {
           "Demetrius": "{{i18n:characters.Demetrius}}"
-        }
+        },
+        "SpouseWantsChildren": true
       },
       "When": {
         "HasFlag": "RobinDateable"

@@ -79,8 +79,8 @@
   "dialogue.robin.dateable.Mon": "Demetrius and I have decided to separate. We've filed for divorce with Mayor Lewis.#$b#I really appreciate your advice earlier. I'm at peace with our decision.",
   "dialogue.robin.dateable.Fri": "I've been sleeping in Maru's room now that Demetrius and I are divorced. It's kind of her to make some space for me.#$e#She's really wonderful.",
   "dialogue.robin.dateable.Wed": "I'm looking forward to a bright future! I hope you'll always be a part of it.",
-  "dialogue.robin.greenrain.GreenRain": "Demetrius made us all very afraid of the green rain but I'm much more relaxed about it now.#$b#I'm still going to take the day off, though.$4",
-  "dialogue.robin.greenrain.GreenRainFinished": "I'm not thrilled about the green rain. But I sure enjoyed a day off!$h",
+  "dialogue.robin.greenrain.GreenRain": "Demetrius made us all very afraid of the green rain, but I'm a little more relaxed about it now. I'm still going to check on the kids though.",
+  "dialogue.robin.greenrain.GreenRainFinished": "I'm not sure how to feel about the green rain. It's weird outside, but it seems harmless.",
   //dialogue - sebastian
   "dialogue.sebastian.drifting.separated.1": "Demetrius has been working a lot lately. It's nice that it's more quiet around here.",
   "dialogue.sebastian.drifting.separated.2": "I've noticed Demetrius has been putting in some crazy hours lately.#$b#I guess he's trying to get ahead.",
@@ -89,6 +89,9 @@
   "dialogue.sebastian.drifting.separated.5": "Demetrius used to bug me about getting out of my room more to spend time with the family.#$b#Now he's the one working all the time and is never around.",
   "dialogue.sebastian.drifting.separated.6": "Mom's cranky about Demetrius working so much. I just appreciate the peace and quiet.",
   "dialogue.sebastian.drifting.separated.7": "I actually had a conversation with Demetrius yesterday.#$b#Feels like a rare achievement these days.",
+  //dialogue - robin engaged
+  "dialogue.robin.engaged.Robin0": "I'm so looking forward to being married to you, @.$1#$b# Like they say, the third time is the charm!$4",
+  "dialogue.robin.engaged.Robin1": "I can't wait to live with you on the farm. We're going to have a great life together.",
   //dialogue - robin marriage
   "dialogue.robin.marriage.spring_Tue": "The valley is so pretty in Spring. I'll enjoy the view on my walk to town for Tuesday workout.",
   "dialogue.robin.marriage.summer_Tue": "Remember that I'm taking the day off today. I'll be at the gym.#$e#It's leg day.$2",
