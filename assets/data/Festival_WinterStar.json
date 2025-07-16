@@ -5,7 +5,10 @@
       "Action": "EditData",
       "Target": "Data/Festivals/winter25",
       "Entries": {
-        "Robin": "{{i18n:festival.winter25.Robin}}"
+        "Robin": "{{i18n:festival.winter25.Robin}}",
+        "Robin_y2": "{{i18n:festival.winter25.Robin_y2}}",
+        "Demetrius": "{{i18n:festival.winter25.Demetrius}}",
+        "Demetrius_y2": "{{i18n:festival.winter25.Demetrius_y2}}"
       },
       "TextOperations": [
         {
