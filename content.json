@@ -1,5 +1,13 @@
 {
   "Format": "2.5.0",
+  "ConfigSchema": {
+    "Disable Portraits": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "Disable Portraits",
+      "Description": "If enabled, this mod's portraits won't be used and thus won't conflict with portrait mods. Note: This mod includes an added portrait (blushing) that other portrait mods are unlikely to have. The game will show their version of Robin's neutral portrait instead."
+    }
+  },
   "DynamicTokens": [
     {
       "Name": "RobinIsAvailable",
@@ -77,7 +85,10 @@
     {
       "LogName": "Update portraits",
       "Action": "Include",
-      "FromFile": "assets/portraits/Portraits.json"
+      "FromFile": "assets/portraits/Portraits.json",
+      "When": {
+        "Disable Portraits": "false"
+      }
     },
     {
       "LogName": "Update sprites",
