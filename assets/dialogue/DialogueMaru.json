@@ -28,9 +28,8 @@
         "Fri8": "{{i18n:dialogue.maru.separated.Fri8}}"
       },
       "When": {
-        "Relationship:Robin |contains=Married": "false", //Robin not living at farm (includes divorced)
         "Relationship:Maru |contains=Married": "false", //Maru still living at sciencehouse
-        "HasFlag": "DateableRobin"
+        "HasFlag": "RobinIsSingle"
       }
     }
   ]

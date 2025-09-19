@@ -52,6 +52,7 @@
         "fall_Thu": "{{i18n:dialogue.demetrius.separated.fall_Thu}}",
         "fall_Wed": "{{i18n:dialogue.demetrius.separated.fall_Wed}}",
         "winter_Mon": "{{i18n:dialogue.demetrius.separated.winter_Mon}}",
+        "winter_Tue": "{{i18n:dialogue.demetrius.separated.winter_Tue}}",
         "winter_Sun": "{{i18n:dialogue.demetrius.separated.winter_Sun}}",
         "winter_Fri": "{{i18n:dialogue.demetrius.separated.winter_Fri}}"
       },

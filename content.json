@@ -16,6 +16,21 @@
         "Relationship:Robin |contains=Divorced": "false",
         "HasFlag": "RobinDateable"
       }
+    },
+    {
+      "Name": "RobinDemetriusDivorced",
+      "Value": true,
+      "When": {
+        "HasFlag": "RobinDateable"
+      }
+    },
+    {
+      "Name": "RobinIsSingle",
+      "Value": true,
+      "When": {
+        "Relationship:Robin |contains=Married": "false",
+        "HasFlag": "RobinDateable"
+      }
     }
   ],
   "Changes": [

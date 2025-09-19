@@ -52,6 +52,17 @@
       "When": {
         "Relationship:Robin |contains=Married": "true"
       }
+    },
+    {
+      "LogName": "Demetrius' 6-heart event when Robin & Demetrius divorced",
+      "Action": "EditData",
+      "Target": "Data/Events/ScienceHouse",
+      "Entries": {
+        "25/f Demetrius 1500/p Demetrius/p Robin": "jaunty/-1000 -1000/farmer -10 -10 0 Demetrius 6 21 3 Robin 5 21 1/skippable/showFrame Demetrius 28/viewport 6 21 true/pause 900/speak Robin \"{{i18n:event.robin.25.0}}\"/emote Demetrius 8/speak Demetrius \"{{i18n:event.robin.25.1}}\"/emote Robin 12/speak Robin \"{{i18n:event.robin.25.2}}\"/warp farmer 6 24/playSound doorClose/pause 500/showFrame Demetrius 29/faceDirection Robin 2/speak Demetrius \"{{i18n:event.robin.25.3}}\"/move farmer 0 -2 0/emote farmer 8/speak Demetrius \"{{i18n:event.robin.25.4}}\"/pause 500/showFrame Demetrius 28/speak Demetrius \"{{i18n:event.robin.25.5}}\"/pause 300/faceDirection Robin 1/pause 300/speak Demetrius \"{{i18n:event.robin.25.6}}\"/pause 600/showFrame Demetrius 29/pause 600/speak Demetrius \"{{i18n:event.robin.25.7}}\"/pause 800/end"
+      },
+      "When": {
+        "RobinDemetriusDivorced": "true"
+      }
     }
   ]
 }
