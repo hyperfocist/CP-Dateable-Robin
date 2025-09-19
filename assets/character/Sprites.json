@@ -22,7 +22,7 @@
       }
     },
     {
-      "LogName": "Exercise sprites", //Tested OK
+      "LogName": "Exercise sprites",
       "Action": "EditImage",
       "Target": "Characters/Robin",
       "FromFile": "assets/character/Robin.png",
@@ -35,9 +35,9 @@
       "Update": "OnLocationChange, OnTimeChange"
     },
     {
-      "LogName": "Exercise sprites winter", //Tested OK
+      "LogName": "Exercise sprites winter",
       "Action": "EditImage",
-      "Target": "Characters/Robin",
+      "Target": "Characters/Robin_Winter",
       "FromFile": "assets/character/Robin_Winter.png",
       "When": {
         "Relationship:Robin |contains=Married": "true",
@@ -54,7 +54,7 @@
       "FromFile": "assets/character/Robin_Wedding_Day.png",
       "When": {
         "DayEvent": "wedding",
-        "LocationName": "Town" //does this fix: the When field is invalid: 'Location' can't be used as a token because that token could not be found.
+        "LocationName": "Town"
       },
       "Update": "OnLocationChange, OnTimeChange"
     }
