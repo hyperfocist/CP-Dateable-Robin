@@ -4,6 +4,9 @@
       "LogName": "Update flower dance",
       "Action": "EditData",
       "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Demetrius_y2": "{{i18n:festival.spring24.Demetrius_y2}}"
+      },
       "TextOperations": [
         {
           "Operation": "Append",
@@ -32,14 +35,10 @@
       ]
     },
     {
-      "LogName": "Flower dance sprites", //Tested OK
+      "LogName": "Flower dance sprites",
       "Action": "EditImage",
       "Target": "Characters/Robin",
       "FromFile": "assets/character/Robin_FlowerDance.png",
-      /*"When": {
-        "RobinIsAvailable": true,
-        "DayEvent": "flower dance" //this works
-      },*/
       "Update": "OnLocationChange, OnTimeChange"
     }
   ]
