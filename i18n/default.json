@@ -2,6 +2,8 @@
   //characters
   "characters.Demetrius": "ex-husband",
   "characters.Robin": "ex-wife",
+  //furniture
+  "robin.portrait": "Robin Portrait",
   //dialogue - demetrius
   "dialogue.demetrius.dating_Robin_memory_oneday": "Robin told me that you two are dating now.#$b#I hope that your analytical skills exceed mine here, and that your relationship achieves a satisfactory level of happiness.",
   "dialogue.demetrius.married_Robin": "Congratulations, @. I hope you and Robin are very happy together.",
@@ -171,6 +173,7 @@
   "dialogue.robin.marriage.fall_1": "I love fall. The colors are glorious.",
   "dialogue.robin.marriage.fall_20": "We should make sure we're ready for winter. Do we have enough hay to last the season?",
   "dialogue.robin.marriage.fall_2": "All of the best things happen in fall. The fair, Spirit's Eve, my birthday...$h",
+  "dialogue.robin.marriage.fall_fri": "Have you met the wild man that lives in the woods behind my shop?$s#$e#I guess I don't really mind, he keeps to himself.",
   "dialogue.robin.marriage.winter_1": "It's winter! Have you ever heard rumors about the Glacier Fish?#$b#I wonder if it really exists.",
   "dialogue.robin.marriage.winter_7": "Tomorrow is the Festival of Ice. I wonder what crazy sculpture Abigail will create.",
   "dialogue.robin.marriage.winter_28": "It's New Year's Eve; let’s have fun tonight!! [348]$h#$e#I'm so looking forward to a new year with you.",

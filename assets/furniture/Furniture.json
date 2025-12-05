@@ -1,0 +1,45 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "TileSheets/{{ModId}}_RobinPortrait",
+      "FromFile": "assets/furniture/RobinPortrait.png",
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "{{ModId}}_RobinPortrait": "RobinPortrait/painting/2 2/2 2/1/999/-1/{{i18n:robin.portrait}}/0/TileSheets\\{{ModId}}_RobinPortrait/true"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Traveler",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModId}}_RobinPortrait":{
+          "Price": 30000,
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Player",
+          "AvoidRepeat": false,
+          "UseObjectDataPrice": false,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifierMode": "Stack",
+          "AvailableStockModifiers": null,
+          "AvailableStockModifierMode": "Stack",
+          "Condition": "PLAYER_HEARTS Current Robin 14",
+          "Id": "(F){{ModId}}_RobinPortrait",
+          "ItemId": "(F){{ModId}}_RobinPortrait",
+          "IsRecipe": false,
+          "StackModifierMode": "Stack",
+          "QualityModifierMode": "Stack",
+        }
+      },
+    },
+  ]
+}

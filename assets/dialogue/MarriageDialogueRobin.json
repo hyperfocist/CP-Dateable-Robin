@@ -87,6 +87,7 @@
           "fall_1": "{{i18n:dialogue.robin.marriage.fall_1}}",
           "fall_20": "{{i18n:dialogue.robin.marriage.fall_20}}",
           "fall_2": "{{i18n:dialogue.robin.marriage.fall_2}}",
+          "fall_Fri": "{{i18n:dialogue.robin.marriage.fall_fri}}",
           "winter_1": "{{i18n:dialogue.robin.marriage.winter_1}}",
           "winter_7": "{{i18n:dialogue.robin.marriage.winter_7}}",
           "winter_28": "{{i18n:dialogue.robin.marriage.winter_28}}"

@@ -109,6 +109,11 @@
       "LogName": "Update sprites",
       "Action": "Include",
       "FromFile": "assets/character/Sprites.json"
+    },
+    {
+      "LogName": "Update furniture",
+      "Action": "Include",
+      "FromFile": "assets/furniture/Furniture.json"
     }
     /*{
       "LogName": "Demetrius leaves the valley test", //Works, although 'debug where Demetrius' will still show him in-world (but he never moves)
