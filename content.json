@@ -5,7 +5,13 @@
       "AllowValues": "true, false",
       "Default": "false",
       "Section": "Disable Portraits",
-      "Description": "If enabled, this mod's portraits won't be used and thus won't conflict with portrait mods. Note: This mod includes an added portrait (blushing) that other portrait mods are unlikely to have. The game will show their version of Robin's neutral portrait instead."
+      "Description": "If enabled, this mod's portraits won't be used and thus won't conflict with portrait mods. Note: This mod includes an added portrait (blushing) that other portrait mods are unlikely to have because they were never part of the vanilla game. The game will show their version of Robin's neutral portrait instead."
+    },
+    "Disable Sprites": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "Disable Sprites",
+      "Description": "If enabled, this mod's sprites won't be used and thus won't conflict with sprite mods. Note that you'll lose sprites for kissing, sleeping, the flower dance, and the wedding ceremony if you choose this option. Other sprite packs won't have sprites for these situations because they were never part of the vanilla game."
     }
   },
   "DynamicTokens": [
