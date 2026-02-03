@@ -114,7 +114,10 @@
     {
       "LogName": "Update sprites",
       "Action": "Include",
-      "FromFile": "assets/character/Sprites.json"
+      "FromFile": "assets/character/Sprites.json",
+      "When": {
+        "Disable Sprites": "false"
+      }
     },
     {
       "LogName": "Update furniture",
