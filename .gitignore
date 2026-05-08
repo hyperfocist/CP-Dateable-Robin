@@ -45,5 +45,6 @@ Thumbs.db
 *.pdf
 
 docs/
-.continue
+.continue/
 GameData/
+.opencode/
