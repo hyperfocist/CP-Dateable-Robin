@@ -3,7 +3,7 @@
     {
       "Action": "Load",
       "Target": "TileSheets/{{ModId}}_RobinPortrait",
-      "FromFile": "assets/furniture/RobinPortrait.png",
+      "FromFile": "assets/furniture/RobinPortrait.png"
     },
 
     {

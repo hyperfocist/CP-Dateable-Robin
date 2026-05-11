@@ -27,7 +27,7 @@
       },
       "When": {
         "Relationship:Robin |contains=Married": "false", //not living at farm (includes divorced)
-        "HasFlag |contains=DateableRobin": "false",
+        "HasFlag |contains=RobinDateable": "false",
         "query: {{Hearts:Robin}} >= 4": true
       }
     },
@@ -58,7 +58,7 @@
       },
       "When": {
         "Relationship:Robin |contains=Married": "false", //not living at farm (includes divorced)
-        "HasFlag": "DateableRobin"
+        "HasFlag": "RobinDateable"
       }
     }
   ]

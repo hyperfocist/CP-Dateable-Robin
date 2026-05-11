@@ -8,7 +8,6 @@
       "When": {
         "Relationship:Robin": "Married, Engaged, Dating",
         "Season": "Spring, Summer, Fall"
-        //"DayEvent: |contains=flower dance, wedding": "false" //this works for flower dance
       }
     },
     {
@@ -17,7 +16,7 @@
       "Target": "Characters/Robin_Winter",
       "FromFile": "assets/character/Robin_Married_Winter.png",
       "When": {
-        //"Relationship:Robin": "Married, Engaged, Dating",
+        "Relationship:Robin": "Married, Engaged, Dating",
         "Season": "Winter"
       }
     },
@@ -27,7 +26,6 @@
       "Target": "Characters/Robin",
       "FromFile": "assets/character/Robin.png",
       "When": {
-        "Relationship:Robin |contains=Married": "true",
         "DayOfWeek": "Tuesday",
         "Time": "{{Range: 1300, 1600}}",
         "Season": "spring, summer, fall"
@@ -40,7 +38,6 @@
       "Target": "Characters/Robin_Winter",
       "FromFile": "assets/character/Robin_Winter.png",
       "When": {
-        "Relationship:Robin |contains=Married": "true",
         "DayOfWeek": "Tuesday",
         "Time": "{{Range: 1300, 1600}}",
         "Season": "Winter"

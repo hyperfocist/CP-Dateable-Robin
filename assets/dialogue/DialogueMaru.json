@@ -29,7 +29,7 @@
       },
       "When": {
         "Relationship:Maru |contains=Married": "false", //Maru still living at sciencehouse
-        "HasFlag": "RobinIsSingle"
+        "RobinIsSingle": "true"
       }
     }
   ]

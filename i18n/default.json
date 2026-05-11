@@ -12,8 +12,8 @@
   "dialogue.demetrius.dating.pamHouseUpgradeAnonymous": "Robin won't even tell *me* who paid for Pam's new house!#$e#I'm glad she's so loyal to her word...$h",
   "dialogue.demetrius.dating.Mon_inlaw_Maru": "It's hard to do good science without Maru's help...#$b#But she seems to be happy.",
   "dialogue.demetrius.dating.Thu": "How's the farming business going? It's parsnip season, isn't it?#$e#I can imagine it take a lot of effort, working outdoors with plants all day.",
-  "dialogue.demetrius.dating.Wed_2": "Do you think emotions follow a predictable pattern?#$b#I've been trying to graph Robin's, but the results are inconclusive so far.",
-  "dialogue.demetrius.dating.Sun_2": "I've developed a hypothesis about Robin's mood fluctuations, but I need at least another month of observation to confirm it.#$b#I'm not sure when I'll find the time, though.",
+  "dialogue.demetrius.dating.Wed2": "Do you think emotions follow a predictable pattern?#$b#I've been trying to graph Robin's, but the results are inconclusive so far.",
+  "dialogue.demetrius.dating.Sun2": "I've developed a hypothesis about Robin's mood fluctuations, but I need at least another month of observation to confirm it.#$b#I'm not sure when I'll find the time, though.",
   "dialogue.demetrius.dating.summer_Tue": "Robin mentioned she's upset about how much I’ve been working. I haven't had the chance to fully analyze her emotions yet.",
   "dialogue.demetrius.dating.summer_Thu": "I've been analyzing the ecosystem around Stardew Valley for years now. The data is... overwhelming. There's so much left to study.",
   "dialogue.demetrius.dating.fall_Thu": "Robin seems angry these days.#$b#Do you think it’s possible that, like a plant under stress, she’s reacting to an external factor I haven't yet accounted for?",
@@ -93,7 +93,7 @@
   "dialogue.sebastian.drifting.separated.6": "Mom's cranky about Demetrius working so much. I just appreciate the peace and quiet.",
   "dialogue.sebastian.drifting.separated.7": "I actually had a conversation with Demetrius yesterday.#$b#Feels like a rare achievement these days.",
   //dialogue - robin engaged
-  "dialogue.robin.engaged.Robin0": "I'm so looking forward to being married to you, @.$1#$b# Like they say, the third time is the charm!$4",
+  "dialogue.robin.engaged.Robin0": "I'm so looking forward to being married to you, @.$1#$b#Like they say, the third time is the charm!$4",
   "dialogue.robin.engaged.Robin1": "I can't wait to live with you on the farm. We're going to have a great life together.",
   //dialogue - robin marriage
   "dialogue.robin.marriage.spring_Tue": "The valley is so pretty in Spring. I'll enjoy the view on my walk to town for Tuesday workout.",

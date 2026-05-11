@@ -34,7 +34,7 @@
       "Action": "EditData",
       "Target": "Data/animationDescriptions",
       "Entries": {
-        "robin_sleep": "36/36/36" // note: make name lowercase
+        "robin_sleep": "36/36/36"
       }
     },
     {
@@ -60,7 +60,7 @@
         ]
       },
       "When": {
-        "HasFlag": "RobinDateable"
+        "RobinIsSingle": "true"
       }
     },
     {

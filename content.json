@@ -60,7 +60,7 @@
       "Action": "Include",
       "FromFile": "assets/data/Shops.json",
       "When": {
-        "HasFlag": "Robin14Hearts"
+        "HasFlag": "LowerPrices"
       }
     },
     {
@@ -89,7 +89,7 @@
       "FromFile": "assets/dialogue/DialogueMaru.json"
     },
     {
-      "LogName": "Sebastion dialog",
+      "LogName": "Sebastian dialog",
       "Action": "Include",
       "FromFile": "assets/dialogue/DialogueSebastian.json"
     },
@@ -124,23 +124,5 @@
       "Action": "Include",
       "FromFile": "assets/furniture/Furniture.json"
     }
-    /*{
-      "LogName": "Demetrius leaves the valley test", //Works, although 'debug where Demetrius' will still show him in-world (but he never moves)
-      //maybe add a custom map for him to spawn into... Also, removing him would require updating game-wide dialog & events
-      "Action": "EditData",
-      "Target": "Data/TriggerActions",
-      "Entries": {
-        "{{ModId}}_DemetriusLeaves": {
-          "Id": "{{ModId}}_DemetriusLeaves",
-          "Trigger": "DayStarted",
-          "Actions": [
-            "SetNpcInvisible Demetrius 1"
-          ]
-        }
-      },
-      "When": {
-        "Relationship:Robin |contains=Married": "true"
-      }
-    },*/
   ]
 }

@@ -19,8 +19,8 @@
         "pamHouseUpgradeAnonymous": "{{i18n:dialogue.demetrius.dating.pamHouseUpgradeAnonymous}}",
         "Mon_inlaw_Maru": "{{i18n:dialogue.demetrius.dating.Mon_inlaw_Maru}}",
         "Thu": "{{i18n:dialogue.demetrius.dating.Thu}}",
-        "Wed_2": "{{i18n:dialogue.demetrius.dating.Wed_2}}",
-        "Sun_2": "{{i18n:dialogue.demetrius.dating.Sun_2}}",
+        "Wed2": "{{i18n:dialogue.demetrius.dating.Wed2}}",
+        "Sun2": "{{i18n:dialogue.demetrius.dating.Sun2}}",
         "summer_Tue": "{{i18n:dialogue.demetrius.dating.summer_Tue}}",
         "summer_Thu": "{{i18n:dialogue.demetrius.dating.summer_Thu}}",
         "fall_Thu": "{{i18n:dialogue.demetrius.dating.fall_Thu}}",
@@ -30,7 +30,8 @@
         "winter_Fri": "{{i18n:dialogue.demetrius.dating.winter_Fri}}"
       },
       "When": {
-        "HasFlag |contains=DateableRobin": "false"
+        "HasFlag|contains=RobinDateable": "false",
+        "query: {{Hearts:Robin}} >= 4": true
       }
     },
     {
@@ -45,8 +46,8 @@
         "pamHouseUpgradeAnonymous": "{{i18n:dialogue.demetrius.separated.pamHouseUpgradeAnonymous}}",
         "Mon_inlaw_Maru": "{{i18n:dialogue.demetrius.separated.Mon_inlaw_Maru}}",
         "Thu": "{{i18n:dialogue.demetrius.separated.Thu}}",
-        "Wed_2": "{{i18n:dialogue.demetrius.separated.Wed_2}}",
-        "Sun_2": "{{i18n:dialogue.demetrius.separated.Sun_2}}",
+        "Wed2": "{{i18n:dialogue.demetrius.separated.Wed_2}}",
+        "Sun2": "{{i18n:dialogue.demetrius.separated.Sun_2}}",
         "summer_Tue": "{{i18n:dialogue.demetrius.separated.summer_Tue}}",
         "summer_Thu": "{{i18n:dialogue.demetrius.separated.summer_Thu}}",
         "fall_Thu": "{{i18n:dialogue.demetrius.separated.fall_Thu}}",
@@ -57,7 +58,7 @@
         "winter_Fri": "{{i18n:dialogue.demetrius.separated.winter_Fri}}"
       },
       "When": {
-        "HasFlag": "DateableRobin"
+        "RobinDemetriusDivorced": "true"
       }
     }
   ]

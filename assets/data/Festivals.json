@@ -1,23 +1,21 @@
 {
   "Changes": [
-    //Night Market - Winter 15 - 17
-    //Feast of Winter Star - Winter 25
     {
-      "LogName": "Load Egg Festival JSON", //retest this after fixing Characters.json
+      "LogName": "Load Egg Festival JSON",
       "Action": "Include",
       "FromFile": "assets/data/Festival_EggFestival.json"
     },
     {
-      "LogName": "Load Flower Dance JSON",  //let's try this again after fixing Characters.json
+      "LogName": "Load Flower Dance JSON",
       "Action": "Include",
       "FromFile": "assets/data/Festival_FlowerDance.json",
       "When": {
         "RobinIsAvailable": true,
-        "DayEvent": "flower dance" //this works
+        "DayEvent": "flower dance" 
       }
     },
     {
-      "LogName": "Load Luau JSON", //retest this after fixing Characters.json
+      "LogName": "Load Luau JSON",
       "Action": "Include",
       "FromFile": "assets/data/Festival_Luau.json",
       "When": {
@@ -25,20 +23,44 @@
       }
     },
     {
-      "LogName": "Load Moonlight Jellies JSON", //retest this after fixing Characters.json
+      "LogName": "Load Moonlight Jellies JSON",
       "Action": "Include",
       "FromFile": "assets/data/Festival_MoonlightJellies.json",
       "When": {
         "HasFlag": "RobinDateable"
       }
     },
-    /*{
+    /* {
+      "LogName": "Load Ice Festival JSON",
+      "Action": "Include",
+      "FromFile": "assets/data/Festival_IceFestival.json",
+      "When": {
+        "HasFlag": "RobinDateable"
+      }
+    }, */
+    /* {
+      "LogName": "Load Spirits Eve JSON",
+      "Action": "Include",
+      "FromFile": "assets/data/Festival_SpiritsEve.json",
+      "When": {
+        "HasFlag": "RobinDateable"
+      }
+    }, */
+    /* {
       "LogName": "Load Stardew Valley Fair JSON",
       "Action": "Include",
       "FromFile": "assets/data/Festival_StardewValleyFair.json",
       "When": {
         "HasFlag": "RobinDateable"
       }
-    }*/
+    }, */
+    {
+      "LogName": "Load Winter Star JSON",
+      "Action": "Include",
+      "FromFile": "assets/data/Festival_WinterStar.json",
+      "When": {
+        "HasFlag": "RobinDateable"
+      }
+    }
   ]
 }
