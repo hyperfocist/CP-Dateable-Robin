@@ -1,7 +1,7 @@
 {
   "Name": "Dateable Robin for 1.6",
   "Author": "Hyperfocist",
-  "Version": "1.0.9",
+  "Version": "1.0.10",
   "Description": "A mod that lets you date (and marry) Robin.",
   "UniqueID": "Hyperfocist.DateableRobin",
   "UpdateKeys": [ "Nexus:35126", "https://github.com/hyperfocist/CP-Dateable-Robin" ],
@@ -12,6 +12,22 @@
     {
       "UniqueID": "ApryllForever.CPPolyamorySweet",
       "IsRequired": false
-    }
+    },
+    {  
+      "UniqueID": "Pseudodiego.XtardewValley",  
+      "IsRequired": false
+    },  
+    {  
+      "UniqueID": "hixega.XtardewFemale",  
+      "IsRequired": false
+    },  
+    {  
+      "UniqueID": "Emreld.XtardewValleyRestoration",  
+      "IsRequired": false
+    },  
+    {  
+      "UniqueID": "Pseudodiego.LAtardewValley",  
+      "IsRequired": false
+    }  
   ]
 }
