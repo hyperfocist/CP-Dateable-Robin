@@ -1,27 +1,54 @@
 {
   "Changes": [
     {
-      "LogName": "Robin's 7-heart event - will Robin be dateable?",
+      "LogName": "Robin's 5-heart (single) event - hint of trouble",
+      "Action": "EditData",
+      "Target": "Data/Events/ScienceHouse",
+      "Entries": {
+        "{{ModId}}_0006/f Robin 1250/t 0600 2400": "continue/5 20/farmer 8 20 0 Robin 8 18 0/skippable/pause 2000/emote Robin 16/faceDirection Robin 2/pause 500/speak Robin \"{{i18n:event.robin.hint.0}}\"/pause 500/faceDirection Robin 1/emote Robin 28/pause 1000/faceDirection Robin 2/pause 500/speak Robin \"{{i18n:event.robin.hint.1}}\"/pause 500/emote Robin 28/speak Robin \"{{i18n:event.robin.hint.2}}\"/pause 800/end"
+      },
+      "When": {
+        "Relationship:Robin |contains=Friendly": "true"
+      }
+    },
+    {
+      "LogName": "Robin's 8-heart (single) event - deeper hint of trouble",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "{{ModId}}_0007/f Robin 2000/t 0600 2400/SawEvent {{ModId}}_0006": "Cloth/31 60/farmer 30 60 1 Robin 32 60 3/skippable/pause 1000/speak Robin \"{{i18n:event.robin.hint2.0}}\"/pause 500/emote Robin 12/pause 800/speak Robin \"{{i18n:event.robin.hint2.1}}\"/pause 500/speak Robin \"{{i18n:event.robin.hint2.2}}\"/pause 500/emote farmer 32/speak Robin \"{{i18n:event.robin.hint2.3}}\"/pause 800/end"
+      },
+      "When": {
+        "Relationship:Robin |contains=Friendly": "true"
+      }
+    },
+    {
+      "LogName": "Robin's 10-heart (single) event - will Robin be dateable?",
       "Action": "EditData",
       "Target": "Data/Events/Farm",
       "Entries": {
-        "{{ModId}}_0001/f Robin 1750/t 0600 2400": "continue/64 15/farmer 64 16 2 Robin 64 18 0/skippable/pause 1500/speak Robin \"{{i18n:event.robin.7.0}}\"/pause 500/faceDirection Robin 3/emote Robin 28/pause 1800/faceDirection Robin 0/speak Robin \"{{i18n:event.robin.7.1}}\"/pause 1000/speak Robin \"{{i18n:event.robin.7.2}}\"/pause 500/emote Robin 28/pause 500/speak Robin \"{{i18n:event.robin.7.3}}\" /pause 200/question fork0 \"{{i18n:event.robin.7.4}}\" /fork SingleRobin/pause 500/message \"{{i18n:event.robin.7.5}}\"/pause 1000/end",
-        "SingleRobin": "pause 200/addMailReceived RobinDateable/speak Robin \"{{i18n:event.robin.single.0}}\"/pause 500/end"
+        "{{ModId}}_0001/f Robin 2500/t 0600 2400/SawEvent {{ModId}}_0006/SawEvent {{ModId}}_0007": "Cloth/64 15/farmer 64 16 2 Robin 64 18 0/skippable/pause 1500/speak Robin \"{{i18n:event.robin.7.0}}\"/pause 500/faceDirection Robin 3/emote Robin 28/pause 1800/faceDirection Robin 0/speak Robin \"{{i18n:event.robin.7.1}}\"/pause 1000/speak Robin \"{{i18n:event.robin.7.2}}\"/pause 500/emote Robin 28/pause 500/speak Robin \"{{i18n:event.robin.7.3}}\" /pause 200/question fork0 \"{{i18n:event.robin.7.4}}\" /fork SingleRobin/pause 500/message \"{{i18n:event.robin.7.5}}\"/pause 1000/end",
+        "SingleRobin": "pause 200/mailReceived RobinDateable/speak Robin \"{{i18n:event.robin.single.0}}\"/pause 500/end"
       }
     },
     {
-      "LogName": "Robin's 8-heart event - declaring love",
+      "LogName": "Robin is dateable - max dateable NPC hearts, start gossip",
       "Action": "EditData",
-      "Target": "Data/Events/Backwoods",
+      "Target": "Data/TriggerActions",
       "Entries": {
-        "{{ModId}}_0002/f Robin 2000/t 0600 2400": "sweet/25 15/farmer 19 17 1 Robin 25 14 3/skippable/pause 1500/speak Robin \"{{i18n:event.robin.8.0}}\"/move farmer 0 -2 0 Robin 0 1 2/move farmer 2 0 1 Robin -3 0 3/pause 1000/speak Robin \"{{i18n:event.robin.8.1}}\"/emote farmer 8/pause 1000/speak Robin \"{{i18n:event.robin.8.2}}\"/emote farmer 32/pause 1000/speak Robin \"{{i18n:event.robin.8.3}}\"/emote farmer 16/pause 1000/speak Robin \"{{i18n:event.robin.8.4}}\"/pause 1000/speak Robin \"{{i18n:event.robin.8.5}}\"/emote farmer 20/pause 1000/speak Robin \"{{i18n:event.robin.8.6}}\"/pause 1000/emote Robin 20 true/emote farmer 20/pause 1000/globalFade .007/viewport -1000 -1000/end"
-      },
-      "When": {
-        "HasFlag": "RobinDateable"
+        "{{ModId}}_RobinBecomesSingle": {
+          "Id": "{{ModId}}_RobinBecomesSingle",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_MAIL Current RobinDateable Received",
+          "Actions": [
+            "AddFriendshipPoints Robin -500",
+            "AddConversationTopic RobinDemetriusDivorceTea 7"
+          ]
+        }
       }
     },
     {
-      "LogName": "Robin's 8-heart + dating event - Demetrius is OK",
+      "LogName": "Robin's 8-heart (dating+) event - Demetrius is OK",
       "Action": "EditData",
       "Target": "Data/Events/Mountain",
       "Entries": {
@@ -32,47 +59,80 @@
       }
     },
     {
-      "LogName": "Robin's 11-heart event - low prices",
+      "LogName": "Robin's 9-heart (dating) bridge event - finding footing",
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "Entries": {
+        "{{ModId}}_0008/f Robin 2250/t 0600 2400": "continue/28 35/farmer 23 34 1 Robin 28 35 2/skippable/move farmer 3 0 1/faceDirection Robin 3 true/move farmer 0 1 2/move farmer 1 0 1/emote Robin 20/pause 750/speak Robin \"{{i18n:event.robin.bridge.0}}\"/pause 500/speak Robin \"{{i18n:event.robin.bridge.1}}\"/pause 500/speak Robin \"{{i18n:event.robin.bridge.2}}\"/emote Robin 20 true/emote farmer 20/pause 1000/end"
+      },
+      "When": {
+        "Relationship:Robin |contains=Dating": "true"
+      }
+    },
+    {
+      "LogName": "Robin's 10-heart (dating) event - declaring love",
+      "Action": "EditData",
+      "Target": "Data/Events/Backwoods",
+      "Entries": {
+        "{{ModId}}_0002/f Robin 2500/t 0600 2400": "sweet/25 15/farmer 19 17 1 Robin 25 14 3/skippable/pause 1500/speak Robin \"{{i18n:event.robin.8.0}}\"/move farmer 0 -2 0 Robin 0 1 2/move farmer 2 0 1 Robin -3 0 3/pause 1000/speak Robin \"{{i18n:event.robin.8.1}}\"/emote farmer 8/pause 1000/speak Robin \"{{i18n:event.robin.8.2}}\"/emote farmer 32/pause 1000/speak Robin \"{{i18n:event.robin.8.3}}\"/emote farmer 16/pause 1000/speak Robin \"{{i18n:event.robin.8.4}}\"/pause 1000/speak Robin \"{{i18n:event.robin.8.5}}\"/emote farmer 20/pause 1000/speak Robin \"{{i18n:event.robin.8.6}}\"/pause 1000/emote Robin 20 true/emote farmer 20/pause 1000/globalFade .007/viewport -1000 -1000/end"
+      },
+      "When": {
+        "Relationship:Robin |contains=Dating": "true"
+      }
+    },
+    {
+      "LogName": "Robin's 12-heart (married) event - low prices",
       "Action": "EditData",
       "Target": "Data/Events/ScienceHouse",
       "Entries": {
-        "{{ModId}}_0004/f Robin 2250/t 1030 1500": "sweet/5 20/farmer 6 24 0 Robin 5 18 2/addMailReceived LowerPrices/skippable/pause 1500/speak Robin \"{{i18n:event.robin.11.0}}\"/move farmer 0 -3 0/move farmer -2 0 0/move farmer 0 -3 1/faceDirection Robin 3/emote Robin 20/pause 1000/speak Robin \"{{i18n:event.robin.11.1}}\"/speak Robin \"{{i18n:event.robin.11.2}}\"/speak Robin \"{{i18n:event.robin.11.3}}\"/speak Robin \"{{i18n:event.robin.11.4}}\"/speak Robin \"{{i18n:event.robin.11.5}}\"/speak Robin \"{{i18n:event.robin.11.6}}\"/emote Robin 20 true/emote farmer 20/pause 1000/addMailReceived Robin11Hearts/end"
+        "{{ModId}}_0004/f Robin 3000/t 0930 1500": "sweet/5 20/farmer 6 24 0 Robin 5 18 2/mailReceived LowerPrices/skippable/pause 1500/speak Robin \"{{i18n:event.robin.11.0}}\"/move farmer 0 -3 0/move farmer -2 0 0/move farmer 0 -3 1/faceDirection Robin 3/emote Robin 20/pause 1000/speak Robin \"{{i18n:event.robin.11.1}}\"/speak Robin \"{{i18n:event.robin.11.2}}\"/speak Robin \"{{i18n:event.robin.11.3}}\"/speak Robin \"{{i18n:event.robin.11.4}}\"/speak Robin \"{{i18n:event.robin.11.5}}\"/speak Robin \"{{i18n:event.robin.11.6}}\"/emote Robin 20 true/emote farmer 20/pause 1000/mailReceived Robin11Hearts/end"
       },
       "When": {
         "Relationship:Robin |contains=Married": "true"
       }
     },
     {
-      "LogName": "Robin's 14-heart event - loving life",
+      "LogName": "Robin's 14-heart (married) event - loving life",
       "Action": "EditData",
       "Target": "Data/Events/Railroad",
       "Entries": {
-        "{{ModId}}_0005/f Robin 3500/season Winter/": "sweet/24 38/robin 24 38 1 farmer 25 38 3/makeInvisible 52 50 4 3/addMailReceived Robin14Hearts/changeSprite robin Winter/pause 3000/emote robin 20//speak Robin \"{{i18n:event.robin.14.0}}\"/pause 500/faceDirection robin 0/speak Robin \"{{i18n:event.robin.14.1}}\"/pause 500/faceDirection robin 1/speak Robin \"{{i18n:event.robin.14.2}}\"/pause 500/emote robin 28/speak Robin \"{{i18n:event.robin.14.3}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.4}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.5}}\"/pause 500/emote robin 20/speak Robin \"{{i18n:event.robin.14.6}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.7}}\"/pause 3000/speak Robin \"{{i18n:event.robin.14.8}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.9}}\"/pause 500/emote robin 20/speak Robin \"{{i18n:event.robin.14.10}}\"/pause 500/positionOffset farmer 16 0 true/animate farmer true true 50 101/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/showFrame robin 28/pause 500/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/playSound dwop/pause 700/emote robin 20 true/emote farmer 20/stopAnimation farmer/showFrame robin 20/pause 700/speak Robin \"{{i18n:event.robin.14.11}}\"/end",
-        "{{ModId}}_0005/f Robin 3500/": "sweet/24 38/robin 24 38 1 farmer 25 38 3/makeInvisible 52 50 4 3/addMailReceived Robin14Hearts/changeSprite robin /pause 3000/emote robin 20//speak Robin \"{{i18n:event.robin.14.0}}\"/pause 500/faceDirection robin 0/speak Robin \"{{i18n:event.robin.14.1}}\"/pause 500/faceDirection robin 1/speak Robin \"{{i18n:event.robin.14.2}}\"/pause 500/emote robin 28/speak Robin \"{{i18n:event.robin.14.3}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.4}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.5}}\"/pause 500/emote robin 20/speak Robin \"{{i18n:event.robin.14.6}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.7}}\"/pause 3000/speak Robin \"{{i18n:event.robin.14.8}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.9}}\"/pause 500/emote robin 20/speak Robin \"{{i18n:event.robin.14.10}}\"/pause 500/positionOffset farmer 16 0 true/animate farmer true true 50 101/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/showFrame robin 28/pause 500/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/playSound dwop/pause 700/emote robin 20 true/emote farmer 20/stopAnimation farmer/showFrame robin 20/pause 700/speak Robin \"{{i18n:event.robin.14.11}}\"/end"
+        "{{ModId}}_0005/f Robin 3500/season Winter/": "sweet/24 38/robin 24 38 1 farmer 25 38 3/makeInvisible 52 50 4 3/mailReceived Robin14Hearts/changeSprite robin Winter/pause 3000/emote robin 20/speak Robin \"{{i18n:event.robin.14.0}}\"/pause 500/faceDirection robin 0/speak Robin \"{{i18n:event.robin.14.1}}\"/pause 500/faceDirection robin 1/speak Robin \"{{i18n:event.robin.14.2}}\"/pause 500/emote robin 28/speak Robin \"{{i18n:event.robin.14.3}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.4}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.5}}\"/pause 500/emote robin 20/speak Robin \"{{i18n:event.robin.14.6}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.7}}\"/pause 3000/speak Robin \"{{i18n:event.robin.14.8}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.9}}\"/pause 500/emote robin 20/speak Robin \"{{i18n:event.robin.14.10}}\"/pause 500/positionOffset farmer 16 0 true/animate farmer true true 50 101/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/showFrame robin 28/pause 500/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/playSound dwop/pause 700/emote robin 20 true/emote farmer 20/stopAnimation farmer/showFrame robin 20/pause 700/speak Robin \"{{i18n:event.robin.14.11}}\"/end",
+        "{{ModId}}_0005/f Robin 3500/": "sweet/24 38/robin 24 38 1 farmer 25 38 3/makeInvisible 52 50 4 3/mailReceived Robin14Hearts/changeSprite robin /pause 3000/emote robin 20//speak Robin \"{{i18n:event.robin.14.0}}\"/pause 500/faceDirection robin 0/speak Robin \"{{i18n:event.robin.14.1}}\"/pause 500/faceDirection robin 1/speak Robin \"{{i18n:event.robin.14.2}}\"/pause 500/emote robin 28/speak Robin \"{{i18n:event.robin.14.3}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.4}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.5}}\"/pause 500/emote robin 20/speak Robin \"{{i18n:event.robin.14.6}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.7}}\"/pause 3000/speak Robin \"{{i18n:event.robin.14.8}}\"/pause 500/speak Robin \"{{i18n:event.robin.14.9}}\"/pause 500/emote robin 20/speak Robin \"{{i18n:event.robin.14.10}}\"/pause 500/positionOffset farmer 16 0 true/animate farmer true true 50 101/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/showFrame robin 28/pause 500/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/positionOffset farmer -2 0/positionOffset robin 2 0/pause 50/playSound dwop/pause 700/emote robin 20 true/emote farmer 20/stopAnimation farmer/showFrame robin 20/pause 700/speak Robin \"{{i18n:event.robin.14.11}}\"/end"
       },
       "When": {
         "Relationship:Robin |contains=Married": "true"
       }
     },
     {
-      "LogName": "Demetrius' 6-heart event when Robin & Demetrius divorced",
+      "LogName": "Demetrius' 6-heart (tomatoes) event when Robin & Demetrius divorced",
       "Action": "EditData",
       "Target": "Data/Events/ScienceHouse",
-      "Entries": {
-        "25/f Demetrius 1500/p Demetrius/p Robin": "jaunty/-1000 -1000/farmer -10 -10 0 Demetrius 6 21 3 Robin 5 21 1/skippable/showFrame Demetrius 28/viewport 6 21 true/pause 900/speak Robin \"{{i18n:event.robin.25.0}}\"/emote Demetrius 8/speak Demetrius \"{{i18n:event.robin.25.1}}\"/emote Robin 12/speak Robin \"{{i18n:event.robin.25.2}}\"/warp farmer 6 24/playSound doorClose/pause 500/showFrame Demetrius 29/faceDirection Robin 2/speak Demetrius \"{{i18n:event.robin.25.3}}\"/move farmer 0 -2 0/emote farmer 8/speak Demetrius \"{{i18n:event.robin.25.4}}\"/pause 500/showFrame Demetrius 28/speak Demetrius \"{{i18n:event.robin.25.5}}\"/pause 300/faceDirection Robin 1/pause 300/speak Demetrius \"{{i18n:event.robin.25.6}}\"/pause 600/showFrame Demetrius 29/pause 600/speak Demetrius \"{{i18n:event.robin.25.7}}\"/pause 800/end"
-      },
+      "TextOperations": [
+        {
+          "Operation": "ReplaceDelimited",
+          "Target": ["Entries", "25/f Demetrius 1500/p Demetrius/p Robin"],
+          "Search": "speak Robin \"Demetrius, I didn't tell you to get tomatoes. I said to get fruit.\"",
+          "Value": "speak Robin \"{{i18n:event.robin.25.0}}\"",
+          "Delimiter": "/"
+        }
+      ],
       "When": {
         "RobinDemetriusDivorced": "true"
       }
     },
     {
-      "LogName": "Emily's 12-heart event - clothes therapy",
+      "LogName": "Emily's 12-heart event - clothing therapy",
       "Action": "EditData",
       "Target": "Data/Events/ManorHouse",
-      "Entries": {
-        "2123243/e 2111194": "EmilyTheme/-1000 -1000/farmer -2000 -2000 0 Emily 7 6 2 Lewis 3 7 1 Clint 11 9 3 Shane 8 8 0 Abigail 7 8 0 Robin 2 9 1/skippable/specificTemporarySprite ClothingTherapy/viewport 5 7 true/pause 2000/speak Emily \"Welcome to clothing therapy!\"/faceDirection Abigail 1/emote Robin 8 true/faceDirection Shane 3/pause 500/faceDirection Shane 0/faceDirection Abigail 0/pause 500/speak Emily \"You're probably wondering... what is clothing therapy?#$b#I'll try to explain.\"/move Emily 0 1 2/speak Emily \"So many of us are struggling with personal issues... things holding us back from living how we want.$u#$b#It's important to me that everyone has a free and happy life... so I came up with a new kind of therapy to help people achieve that.$u\"/move Emily 0 -1 2/pause 500/speak Emily \"It's based on the amazing power of self-expression. Self-expression is a wonderful healing tool, did you know that?\"/faceDirection Emily 3/pause 1000/speak Emily \"Behind this curtain, you'll find racks and racks of clothes. There's endless options to choose from.\"/faceDirection Emily 2/speak Emily \"Your job is simple: find the outfit that truly speaks to you, and put it on.#$b#Feel confident in yourself and your choice. You all have a unique style to share with the world!#$b#Shane, you're up first!$h\"/specificTemporarySprite curtainOpen/pause 1500/showFrame Shane 18/jump Shane/pause 1400/showFrame Shane 0/pause 1000/textAboveHead Shane \"Okay\"/move Shane 0 -1 0/move Shane -3 0 0/move Shane 0 -2 2/pause 1000/specificTemporarySprite curtainClose/pause 1000/playSound doorClose/warp farmer 4 11/move farmer 0 -1 0/speak Emily \"Ah, @. You're just in time. Just observe and keep an open mind... okay?\"/pause 1000/move farmer -1 0 0/warp Shane -1000 -1000/addTemporaryActor ClothesTherapyCharacters 16 32 5 5 2 true character/pause 3000/specificTemporarySprite curtainOpen/pause 1000/faceDirection Emily 3/move ClothesTherapyCharacters 0 2 2/textAboveHead Robin \"Wow...\"/pause 1000/move ClothesTherapyCharacters 0 2 2/faceDirection Abigail 3/textAboveHead Abigail \"Cool\"/pause 1000/faceDirection Emily 2/speak Emily \"Shane, it's a new side of you we've never known about. That's great!#$b#Now, go outside with confidence and show the world!\"/pause 1000/emote ClothesTherapyCharacters 40/pause 500/textAboveHead ClothesTherapyCharacters \"Sure\"/move ClothesTherapyCharacters 0 2 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/pause 2000/speak Emily \"Okay, everyone gets a turn!\"/faceDirection Abigail 0 true/move Robin 3 0 0/faceDirection Clint 2 true/textAboveHead Clint \"Oh no...\"/move Robin 0 -4 2/pause 1000/specificTemporarySprite curtainClose/pause 3000/warp Robin -1000 -1000/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 128/textAboveHead ClothesTherapyCharacters \"Heehee\"/pause 1000/specificTemporarySprite curtainOpen/pause 1000/textAboveHead Lewis \"Oh my!\"/move ClothesTherapyCharacters 0 3 2/textAboveHead Emily \"Beautiful!\"/pause 1000/showFrame ClothesTherapyCharacters 5/specificTemporarySprite heart 5 8/pause 2000/textAboveHead ClothesTherapyCharacters \"\"{{i18n:clothingtherapy.robin.reaction}}\"\"/pause 1000/move ClothesTherapyCharacters 0 3 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/pause 2000/textAboveHead Lewis \"Why not...\"/move Lewis 2 0 0/move Lewis 0 -2 2/pause 1000/specificTemporarySprite curtainClose/faceDirection Emily 3/pause 2000/warp Lewis -1000 -1000/playSound shwip/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 64/pause 1000/textAboveHead ClothesTherapyCharacters \"Hehe... not bad!\"/pause 2000/specificTemporarySprite curtainOpen/pause 1000/move ClothesTherapyCharacters 0 3 2/textAboveHead Emily \"Lookin' sharp!\"/faceDirection Emily 2/pause 3000/move ClothesTherapyCharacters 0 3 2/playSound doorClose/warp ClothesTherapyCharacters -1000 -1000/textAboveHead Abigail \"Me next!\"/move Abigail -2 0 0/move Abigail 0 -3 2/pause 2000/specificTemporarySprite curtainClose/pause 2000/warp Abigail -1000 -1000/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 32/pause 3000/specificTemporarySprite curtainOpen/pause 1000/move ClothesTherapyCharacters 0 3 2/textAboveHead Emily \"Very nice!\"/pause 2000/showFrame ClothesTherapyCharacters 16/playSound clank/pause 1000/textAboveHead ClothesTherapyCharacters \"It's sweaty in here...\"/pause 3000/move ClothesTherapyCharacters 0 3 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/pause 1000/faceDirection Emily 3/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"Clint? You're up!\"/pause 500/jump Clint/shake Clint 4000/pause 1000/textAboveHead Clint \"M...Me?\"/pause 2000/speak Clint \"*gulp*... Okay, Emily. I'll do it.$4\"/pause 1000/move Clint -6 0 0/move Clint 0 -4 2/pause 1000/faceDirection Emily 3/specificTemporarySprite curtainClose/pause 4000/warp Clint -1000 -1000/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 96/pause 1000/specificTemporarySprite curtainOpen/pause 2000/move ClothesTherapyCharacters 0 3 2/faceDirection Emily 2/textAboveHead Emily \"Awww, cute!\"/pause 1600/showFrame ClothesTherapyCharacters 10/pause 800/speak Clint \"Aww? Cute? ...*sigh*...$7\"/pause 2000/move ClothesTherapyCharacters 0 3 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/move Emily 0 3 3/move farmer 0 -1 1/move farmer 1 0 1/speak Emily \"Well, that went very well!#$b#I just hope this experience helps everyone break out of their shells a bit.\"/move Emily -2 0 3 true/pause 200/positionOffset Emily 0 4/pause 300/positionOffset Emily 0 4/pause 300/positionOffset Emily 0 4/pause 300/positionOffset Emily 0 4/pause 2500/speak Emily \"@... um...$4\"/showFrame ClothesTherapyCharacters 11/playSound doorClose/warp ClothesTherapyCharacters 5 11/speak Clint \"I couldn't do it! I don't wanna break out of my shell!$6\"/faceDirection Emily 2 true/jump Emily/showFrame Emily 26/faceDirection farmer 2 true/pause 1600/showFrame Emily 0/speak Clint \"...Oh. I... I guess I'm interrupting something here, aren't I?$7\"/pause 1000/showFrame ClothesTherapyCharacters 0/pause 1500/showFrame ClothesTherapyCharacters 10/pause 1700/speak Clint \"I understand. I'll leave now... Congrats, @.$7\"/pause 1000/playSound doorClose/warp ClothesTherapyCharacters -1000 -1000/pause 1000/faceDirection Emily 3/emote Emily 8/pause 2000/end"
-      }
+      "TextOperations": [
+        {
+          "Operation": "ReplaceDelimited",
+          "Target": ["Entries", "2123243/e 2111194"],
+          "Search": "textAboveHead ClothesTherapyCharacters \"Let's see what Demetrius thinks...\"",
+          "Value": "textAboveHead ClothesTherapyCharacters \"{{i18n:clothingtherapy.robin.reaction}}\"",
+          "Delimiter": "/"
+        }
+      ]
     }
-
   ]
 }
