@@ -205,11 +205,11 @@
   //events
   "event.robin.hint.0": "Oh — hey, @. Sorry, I didn't notice you come in!$8#$b#I guess I'm a bit of a mess today.$2",
   "event.robin.hint.1": "It's nothing, really. Just... things have been... well, complicated at home lately.$2#$b#It's been stressful, and I haven't been sleeping well, and...$2",
-  "event.robin.hint.2": "Uh, wow, sorry to dump that on you. I'm sure you didn't come here to hear me complain.$s#$b#Can we just forget about that? How can I help you today?$0",
+  "event.robin.hint.2": "Uh, wow, sorry to dump that on you. I'm sure you didn't come here to hear me complain.$s#$b#Can we please just forget about that? How can I help you today?$0",
   "event.robin.hint2.0": "Hey, @, I'm glad I ran into you. Can I speak with you for a second?#$b#I was hoping you'd do me a favor.",
   "event.robin.hint2.1": "Demetrius and I have been fighting a lot more than usual lately.$2#$b#It's been stressful and unsettling, and... exhausting.$6",
   "event.robin.hint2.2": "If you talk to Maru or Sebby and they seem upset, would you please let me know?#$b#They act like everything is fine. But this has to be hard on them, and I'm a little worried.$s",
-  "event.robin.hint2.3": "Thank-you. I don't really talk about this stuff with people, but... you've become someone I trust.$2#$b# Thanks again, @. I really appreciate you.",
+  "event.robin.hint2.3": "Thank-you. I don't really talk about this stuff with many people, but... you've become someone I trust.$2#$b# Thanks again, @. I really appreciate you.",
   "event.robin.7.0": "Oh, hey, @. I'm glad I caught you.#$b#I need some advice, and since we're good friends now, I wanted to ask your opinion.",
   "event.robin.7.1": "It's no secret that Demetrius and I haven't been getting along too well for a while now.#$b#We had a long talk last night, and I'm not sure how committed he is to working on our marriage.$2",
   "event.robin.7.2": "He made it clear that his work is very important to him.$6",

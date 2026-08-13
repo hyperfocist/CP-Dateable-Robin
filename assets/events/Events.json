@@ -1,38 +1,38 @@
 {
   "Changes": [
     {
-      "LogName": "Robin's 5-heart (single) event - hint of trouble",
+      "LogName": "Robin's 3-heart (single) event - hint of trouble",
       "Action": "EditData",
       "Target": "Data/Events/ScienceHouse",
       "Entries": {
-        "{{ModId}}_0006/f Robin 1250/t 0600 2400": "continue/5 20/farmer 8 20 0 Robin 8 18 0/skippable/pause 2000/emote Robin 16/faceDirection Robin 2/pause 500/speak Robin \"{{i18n:event.robin.hint.0}}\"/pause 500/faceDirection Robin 1/emote Robin 28/pause 1000/faceDirection Robin 2/pause 500/speak Robin \"{{i18n:event.robin.hint.1}}\"/pause 500/emote Robin 28/speak Robin \"{{i18n:event.robin.hint.2}}\"/pause 800/end"
+        "{{ModId}}_0006/f Robin 750/t 0600 2400": "continue/5 20/farmer 8 20 0 Robin 8 18 0/skippable/pause 2000/emote Robin 16/faceDirection Robin 2/pause 500/speak Robin \"{{i18n:event.robin.hint.0}}\"/pause 500/faceDirection Robin 1/emote Robin 28/pause 1000/faceDirection Robin 2/pause 500/speak Robin \"{{i18n:event.robin.hint.1}}\"/pause 500/emote Robin 28/speak Robin \"{{i18n:event.robin.hint.2}}\"/pause 800/end"
       },
       "When": {
         "Relationship:Robin |contains=Friendly": "true"
       }
     },
     {
-      "LogName": "Robin's 8-heart (single) event - deeper hint of trouble",
+      "LogName": "Robin's 6-heart (single) event - deeper hint of trouble",
       "Action": "EditData",
       "Target": "Data/Events/Town",
       "Entries": {
-        "{{ModId}}_0007/f Robin 2000/t 0600 2400/SawEvent {{ModId}}_0006": "Cloth/31 60/farmer 30 60 1 Robin 32 60 3/skippable/pause 1000/speak Robin \"{{i18n:event.robin.hint2.0}}\"/pause 500/emote Robin 12/pause 800/speak Robin \"{{i18n:event.robin.hint2.1}}\"/pause 500/speak Robin \"{{i18n:event.robin.hint2.2}}\"/pause 500/emote farmer 32/speak Robin \"{{i18n:event.robin.hint2.3}}\"/pause 800/end"
+        "{{ModId}}_0007/f Robin 1500/t 0600 2400/SawEvent {{ModId}}_0006": "Cloth/31 60/farmer 30 60 1 Robin 32 60 3/skippable/pause 1000/speak Robin \"{{i18n:event.robin.hint2.0}}\"/pause 500/emote Robin 12/pause 800/speak Robin \"{{i18n:event.robin.hint2.1}}\"/pause 500/speak Robin \"{{i18n:event.robin.hint2.2}}\"/pause 500/emote farmer 32/speak Robin \"{{i18n:event.robin.hint2.3}}\"/pause 800/end"
       },
       "When": {
         "Relationship:Robin |contains=Friendly": "true"
       }
     },
     {
-      "LogName": "Robin's 10-heart (single) event - will Robin be dateable?",
+      "LogName": "Robin's 8-heart (single) event - will Robin be dateable?",
       "Action": "EditData",
       "Target": "Data/Events/Farm",
       "Entries": {
-        "{{ModId}}_0001/f Robin 2500/t 0600 2400/SawEvent {{ModId}}_0006/SawEvent {{ModId}}_0007": "Cloth/64 15/farmer 64 16 2 Robin 64 18 0/skippable/pause 1500/speak Robin \"{{i18n:event.robin.7.0}}\"/pause 500/faceDirection Robin 3/emote Robin 28/pause 1800/faceDirection Robin 0/speak Robin \"{{i18n:event.robin.7.1}}\"/pause 1000/speak Robin \"{{i18n:event.robin.7.2}}\"/pause 500/emote Robin 28/pause 500/speak Robin \"{{i18n:event.robin.7.3}}\" /pause 200/question fork0 \"{{i18n:event.robin.7.4}}\" /fork SingleRobin/pause 500/message \"{{i18n:event.robin.7.5}}\"/pause 1000/end",
+        "{{ModId}}_0001/f Robin 2000/t 0600 2400/SawEvent {{ModId}}_0006/SawEvent {{ModId}}_0007": "Cloth/64 15/farmer 64 16 2 Robin 64 18 0/skippable/pause 1500/speak Robin \"{{i18n:event.robin.7.0}}\"/pause 500/faceDirection Robin 3/emote Robin 28/pause 1800/faceDirection Robin 0/speak Robin \"{{i18n:event.robin.7.1}}\"/pause 1000/speak Robin \"{{i18n:event.robin.7.2}}\"/pause 500/emote Robin 28/pause 500/speak Robin \"{{i18n:event.robin.7.3}}\" /pause 200/question fork0 \"{{i18n:event.robin.7.4}}\" /fork SingleRobin/pause 500/message \"{{i18n:event.robin.7.5}}\"/pause 1000/end",
         "SingleRobin": "pause 200/mailReceived RobinDateable/speak Robin \"{{i18n:event.robin.single.0}}\"/pause 500/end"
       }
     },
     {
-      "LogName": "Robin is dateable - max dateable NPC hearts, start gossip",
+      "LogName": "Robin is dateable - start gossip",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
@@ -41,34 +41,34 @@
           "Trigger": "DayStarted",
           "Condition": "PLAYER_HAS_MAIL Current RobinDateable Received",
           "Actions": [
-            "AddFriendshipPoints Robin -500",
+            //"AddFriendshipPoints Robin -500",
             "AddConversationTopic RobinDemetriusDivorceTea 7"
           ]
         }
       }
     },
     {
-      "LogName": "Robin's 8-heart (dating+) event - Demetrius is OK",
+      "LogName": "Robin's 9-heart (dating+) event - Demetrius is OK",
       "Action": "EditData",
       "Target": "Data/Events/Mountain",
       "Entries": {
-        "{{ModId}}_0003/f Robin 2000/t 0600 2400": "continue/42 13/farmer 42 14 0 Demetrius 42 13 2/skippable/pause 1500/speak Demetrius \"{{i18n:event.robin.10.0}}\" /faceDirection Demetrius 1 true/pause 1000/speak Demetrius \"{{i18n:event.robin.10.1}}\"/pause 1000/faceDirection Demetrius 2 true/speak Demetrius \"{{i18n:event.robin.10.2}}\"/pause 1000/speak Demetrius \"{{i18n:event.robin.10.3}}\"/pause 1000/speak Demetrius \"{{i18n:event.robin.10.4}}\"/faceDirection Demetrius 1 true/pause 2000/speak Demetrius \"{{i18n:event.robin.10.5}}\"/faceDirection Demetrius 2 true/pause 1000/speak Demetrius \"{{i18n:event.robin.10.6}}\"/pause 1000/speak Demetrius \"{{i18n:event.robin.10.7}}\"/pause 1000/globalFade .003/viewport -1000 -1000/end"
+        "{{ModId}}_0003/f Robin 2250/t 0600 2400": "continue/42 13/farmer 42 14 0 Demetrius 42 13 2/skippable/pause 1500/speak Demetrius \"{{i18n:event.robin.10.0}}\" /faceDirection Demetrius 1 true/pause 1000/speak Demetrius \"{{i18n:event.robin.10.1}}\"/pause 1000/faceDirection Demetrius 2 true/speak Demetrius \"{{i18n:event.robin.10.2}}\"/pause 1000/speak Demetrius \"{{i18n:event.robin.10.3}}\"/pause 1000/speak Demetrius \"{{i18n:event.robin.10.4}}\"/faceDirection Demetrius 1 true/pause 2000/speak Demetrius \"{{i18n:event.robin.10.5}}\"/faceDirection Demetrius 2 true/pause 1000/speak Demetrius \"{{i18n:event.robin.10.6}}\"/pause 1000/speak Demetrius \"{{i18n:event.robin.10.7}}\"/pause 1000/globalFade .003/viewport -1000 -1000/end"
       },
       "When": {
         "Relationship:Robin |contains=Dating, Engaged, Married": "true"
       }
     },
-    {
-      "LogName": "Robin's 9-heart (dating) bridge event - finding footing",
-      "Action": "EditData",
-      "Target": "Data/Events/Mountain",
-      "Entries": {
-        "{{ModId}}_0008/f Robin 2250/t 0600 2400": "continue/28 35/farmer 23 34 1 Robin 28 35 2/skippable/move farmer 3 0 1/faceDirection Robin 3 true/move farmer 0 1 2/move farmer 1 0 1/emote Robin 20/pause 750/speak Robin \"{{i18n:event.robin.bridge.0}}\"/pause 500/speak Robin \"{{i18n:event.robin.bridge.1}}\"/pause 500/speak Robin \"{{i18n:event.robin.bridge.2}}\"/emote Robin 20 true/emote farmer 20/pause 1000/end"
-      },
-      "When": {
-        "Relationship:Robin |contains=Dating": "true"
-      }
-    },
+    // {
+    //   "LogName": "Robin's 10-heart (dating) bridge event - finding footing",
+    //   "Action": "EditData",
+    //   "Target": "Data/Events/Mountain",
+    //   "Entries": {
+    //     "{{ModId}}_0008/f Robin 2500/t 0600 2400": "continue/28 35/farmer 23 34 1 Robin 28 35 2/skippable/move farmer 3 0 1/faceDirection Robin 3 true/move farmer 0 1 2/move farmer 1 0 1/emote Robin 20/pause 750/speak Robin \"{{i18n:event.robin.bridge.0}}\"/pause 500/speak Robin \"{{i18n:event.robin.bridge.1}}\"/pause 500/speak Robin \"{{i18n:event.robin.bridge.2}}\"/emote Robin 20 true/emote farmer 20/pause 1000/end"
+    //   },
+    //   "When": {
+    //     "Relationship:Robin |contains=Dating": "true"
+    //   }
+    // },
     {
       "LogName": "Robin's 10-heart (dating) event - declaring love",
       "Action": "EditData",
