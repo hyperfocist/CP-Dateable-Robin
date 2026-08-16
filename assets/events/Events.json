@@ -27,7 +27,7 @@
       "Action": "EditData",
       "Target": "Data/Events/Farm",
       "Entries": {
-        "{{ModId}}_0001/f Robin 2000/t 0600 2400/SawEvent {{ModId}}_0006/SawEvent {{ModId}}_0007": "Cloth/64 15/farmer 64 16 2 Robin 64 18 0/skippable/pause 1500/speak Robin \"{{i18n:event.robin.7.0}}\"/pause 500/faceDirection Robin 3/emote Robin 28/pause 1800/faceDirection Robin 0/speak Robin \"{{i18n:event.robin.7.1}}\"/pause 1000/speak Robin \"{{i18n:event.robin.7.2}}\"/pause 500/emote Robin 28/pause 500/speak Robin \"{{i18n:event.robin.7.3}}\" /pause 200/question fork0 \"{{i18n:event.robin.7.4}}\" /fork SingleRobin/pause 500/message \"{{i18n:event.robin.7.5}}\"/pause 1000/end",
+        "{{ModId}}_0001/f Robin 2000/t 0600 2400/SawEvent {{ModId}}_0006/SawEvent {{ModId}}_0007": "Cloth/64 15/farmer 64 16 2 Robin 64 18 0/pause 1500/speak Robin \"{{i18n:event.robin.7.0}}\"/pause 500/faceDirection Robin 3/emote Robin 28/pause 1800/faceDirection Robin 0/speak Robin \"{{i18n:event.robin.7.1}}\"/pause 1000/speak Robin \"{{i18n:event.robin.7.2}}\"/pause 500/emote Robin 28/pause 500/speak Robin \"{{i18n:event.robin.7.3}}\" /pause 200/question fork0 \"{{i18n:event.robin.7.4}}\" /fork SingleRobin/pause 500/message \"{{i18n:event.robin.7.5}}\"/pause 1000/end",
         "SingleRobin": "pause 200/mailReceived RobinDateable/speak Robin \"{{i18n:event.robin.single.0}}\"/pause 500/end"
       }
     },
@@ -41,10 +41,17 @@
           "Trigger": "DayStarted",
           "Condition": "PLAYER_HAS_MAIL Current RobinDateable Received",
           "Actions": [
-            //"AddFriendshipPoints Robin -500",
-            "AddConversationTopic RobinDemetriusDivorceTea 7"
+            "AddConversationTopic RobinDemetriusDivorceTea 3"
           ]
         }
+      }
+    },
+    {
+      "LogName": "Robin declaring she's single event",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "{{ModId}}_0009/gameStateQuery PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_RobinBecomesSingle": "Cloth/64 15/farmer 64 16 2 Robin 64 18 0/skippable/pause 1500/speak Robin \"{{i18n:event.robin.7-2.0}}\"/pause 1000/speak Robin \"{{i18n:event.robin.7-2.1}}\"/pause 1000/speak Robin \"{{i18n:event.robin.7-2.2}}\"/pause 1000/end"
       }
     },
     {
@@ -58,17 +65,6 @@
         "Relationship:Robin |contains=Dating, Engaged, Married": "true"
       }
     },
-    // {
-    //   "LogName": "Robin's 10-heart (dating) bridge event - finding footing",
-    //   "Action": "EditData",
-    //   "Target": "Data/Events/Mountain",
-    //   "Entries": {
-    //     "{{ModId}}_0008/f Robin 2500/t 0600 2400": "continue/28 35/farmer 23 34 1 Robin 28 35 2/skippable/move farmer 3 0 1/faceDirection Robin 3 true/move farmer 0 1 2/move farmer 1 0 1/emote Robin 20/pause 750/speak Robin \"{{i18n:event.robin.bridge.0}}\"/pause 500/speak Robin \"{{i18n:event.robin.bridge.1}}\"/pause 500/speak Robin \"{{i18n:event.robin.bridge.2}}\"/emote Robin 20 true/emote farmer 20/pause 1000/end"
-    //   },
-    //   "When": {
-    //     "Relationship:Robin |contains=Dating": "true"
-    //   }
-    // },
     {
       "LogName": "Robin's 10-heart (dating) event - declaring love",
       "Action": "EditData",

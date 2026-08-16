@@ -1,0 +1,228 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:robin.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:robin.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:demetrius.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:demetrius.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jodi",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:jodi.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:jodi.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Kent",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:kent.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:kent.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:sam.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:sam.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:caroline.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:caroline.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pierre",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:pierre.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:pierre.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:abigail.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:abigail.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Gus",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:gus.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:gus.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Lewis",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:lewis.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:lewis.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Marnie",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:marnie.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:marnie.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Shane",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:shane.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:shane.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:emily.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:emily.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Haley",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:haley.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:haley.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:clint.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:clint.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Alex",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:alex.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:alex.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:sebastian.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:sebastian.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:maru.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:maru.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/George",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:george.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:george.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Evelyn",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:evelyn.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:evelyn.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Willy",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:willy.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:willy.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Elliott",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:elliott.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:elliott.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:leah.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:leah.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Linus",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:linus.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:linus.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Harvey",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:harvey.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:harvey.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pam",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:pam.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:pam.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Penny",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:penny.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:penny.divorce.tea.1}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "RobinDemetriusDivorceTea": "{{i18n:wizard.divorce.tea}}",
+        "RobinDemetriusDivorceTea_memory_oneday": "{{i18n:wizard.divorce.tea.1}}"
+      }
+    }
+  ]
+}

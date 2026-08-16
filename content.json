@@ -94,6 +94,11 @@
       "FromFile": "assets/dialogue/DialogueSebastian.json"
     },
     {
+      "LogName": "Divorce gossip",
+      "Action": "Include",
+      "FromFile": "assets/dialogue/DialogueDivorceTea.json"
+    },
+    {
       "LogName": "Update events",
       "Action": "Include",
       "FromFile": "assets/events/Events.json"
