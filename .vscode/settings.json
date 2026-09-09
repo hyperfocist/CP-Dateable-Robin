@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000
+}

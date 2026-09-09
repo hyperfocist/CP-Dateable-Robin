@@ -1,6 +1,37 @@
 {
   "Changes": [
     {
+      "LogName": "Maru dialogue updates - Robin & Demetrius drifting apart",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        "Mon4": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Tue4": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Wed4": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Thu4": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Tue6": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Wed6": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Thu6": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Fri6": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Sat6": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Mon8": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Tue8": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Thu8": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Fri8": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Sat8": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Mon10": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Tue10": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Wed10": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Fri10": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}",
+        "Sat10": "{{i18n:dialogue.maru.drifting.separated.{{Random:1,2,3,4,5,6,7}}}}"
+      },
+      "When": {
+        "Relationship:Robin |contains=Married": "false", //not living at farm (includes divorced)
+        "HasFlag |contains=RobinDateable": "false",
+        "query: {{Hearts:Robin}} >= 4": true
+      }
+    },
+    {
       "LogName": "Maru dialogue updates",
       "Action": "EditData",
       "Target": "Characters/Dialogue/Maru",
