@@ -63,7 +63,9 @@ Build the zip with `git archive`, never with Finder's "Compress". `git archive` 
 
 ### What stays out
 
-- `.git/`, `.gitignore`, `AGENTS.md`, `plan.md`, `.idea/`, `.opencode/`, `.continue/`
+- `.git/`, `.gitignore` — excluded via pathspec (`.git` is never tracked anyway)
+- Dev files that ARE git-tracked and MUST be excluded explicitly: `AGENTS.md`, `plan.md`, `.prettierrc`, `.vscode/`
+- `.idea/`, `.opencode/`, `.continue/`
 - Any `.DS_Store`, `._*`, `__MACOSX` — auto-excluded because none are git-tracked
 
 ### Steps
@@ -77,7 +79,12 @@ Build the zip with `git archive`, never with Finder's "Compress". `git archive` 
    git archive --format=zip \
      -o "$HOME/Downloads/Dateable-Robin-${VERSION}.zip" \
      --prefix="[CP] Dateable Robin/" \
-     HEAD -- . ':(exclude).gitignore'
+     HEAD -- . \
+     ':(exclude).gitignore' \
+     ':(exclude)AGENTS.md' \
+     ':(exclude)plan.md' \
+     ':(exclude).prettierrc' \
+     ':(exclude).vscode'
    ```
 
 3. **Verify:**
