@@ -17,17 +17,21 @@
 
 ## Current Milestone: Robin needs a Saturday & Sunday marriage schedule
 
-**Goal**: Robin needs a Saturday & Sunday marriage schedule.
-Do this: marriage_Sat = Same as marriage_Wed. marriage_Sun = Robin arrive at SeedShop 39 5 3 at 1410, 1700 bed
+- Review protraits, emotions for events
 
 **Plan**:
 
-1. (completed) `assets/schedules/Schedules.json` — add two entries to the marriage block of the dateable schedule patch:
+1. (completed - verified in testing) `assets/schedules/Schedules.json` — add two entries to the marriage block of the dateable schedule patch: Send Robin to work on Saturdays & visit Caroline on Sundays
    - `marriage_Sat`: identical to `marriage_Sat` spec = copy of `marriage_Wed`
    - `marriage_Sun`: `1410 SeedShop 39 5 3/1700 bed` (home all morning, at SeedShop 39,5 from 1410, bed at 1700)
-2. (to-do) Verify: JSON-validate `Schedules.json`; in-game test as Robin's spouse (Sat + Sun behavior).
+2. (completed) Robin should continue to visit Community Center after marriage, on Mondays, when the CC is completed: Marriage_Mon: 630 ScienceHouse 8 18 2/1700 CommunityCenter 9 19 3/1930 bed.
+3. (completed - verified) Improve dialogue in Robin's 10-heart event
+4. (completed - verified) Robin doesn't show up as 'wife' on relationships screen
+5. (completed - verified) Prevent 'we got divorced' event from triggering for upgrading players who are already married
+6. (completed - verified) Reworked the story & added two events to improve story pacing
+7. (completed - verified) Added town-wide post-divorce gossip
 
-**Status**: Implemented; in-game test pending.
+**Status**: Implemented; verified.
 
 ---
 
@@ -39,5 +43,6 @@ Do this: marriage_Sat = Same as marriage_Wed. marriage_Sun = Robin arrive at See
 
 ## Next Milestones (High-Level Backlog)
 
-- Robin should continue to visit Community Center after marriage, on Mondays, when the CC is completed: Marriage_Mon: 630 ScienceHouse 8 18 2/1700 CommunityCenter 9 19 3/1930 bed.
-- Robin doesn't show as "Married" on the in-game relationships screen, even though she is married to the player. Interestigly, the blue mermaid pendant icon does appear for her on this screen, as it should for a married NPC.
+- Wedding day spritesheet needs a kissing sprite
+- Add a note to Robin's space with her schedule
+- Test if Robin goes to the GI Resort on Tuesdays (wins the lotto) after marriage.
